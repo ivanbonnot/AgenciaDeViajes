@@ -1,117 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>'El Viajero' Agencia de viajes</title>
+    <link
+      rel="shortcut icon"
+      href="./img/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>'El Viajero' Agencia de viajes</title>
-  <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <nav>
+          <a href="index.html"
+            ><img class="logo" src="./img/logo.png" alt="logo agencia" />
+            <h1>Agencia de Viajes - 'El Viajero'</h1>
+          </a>
+          <ul>
+            <li><a href="./pages/viajesInt.html">Viajes Internacionales</a></li>
+            <li><a href="./pages/viajesArg.html">Viajes en Argentina</a></li>
+            <li><a href="./pages/opiniones.html">Opiniones</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
 
-<body>
-  <div class="grid-container">
-    <header class="header">
-      <nav>
-        <a href="index.html"><img class="logo" src="./img/logo.png" alt="logo agencia" />
-          <h1>Agencia de Viajes - 'El Viajero'</h1>
-        </a>
-        <ul>
-          <li><a href="./pages/viajesInt.html">Viajes Internacionales</a></li>
-          <li><a href="./pages/viajesArg.html">Viajes en Argentina</a></li>
-          <li><a href="./pages/opiniones.html">Opiniones</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="main">
-      <section class="hero">
-        <div>
-          <h3>Agencia de Viajes</h3>
-          <h2>'El Viajero'</h2>
-        </div>
-      </section>
-
-      <section class="about-us">
-        <h2>Acerca de nosotros</h2>
-        <div class="texto-img">
-          <img src="./img/aboutUs.jpg" alt="acerca nosotros" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-            cupiditate accusamus, praesentium alias explicabo debitis
-            asperiores cumque, maxime inventore, perferendis itaque
-            consectetur sapiente! Eligendi qui id dignissimos impedit,
-            corporis saepe. Eveniet impedit at corrupti illum! Quam iste
-            molestiae suscipit atque impedit ex numquam ratione alias quas qui
-            nesciunt odio ipsum, rerum recusandae, soluta blanditiis fugiat
-            rem, ea ullam ipsam quisquam! Perspiciatis nobis laudantium porro
-            rem blanditiis nam aperiam, at exercitationem repellendus corporis
-            amet modi quae unde animi ea assumenda placeat harum! Tenetur
-            maxime, saepe doloribus soluta voluptas obcaecati voluptatibus
-            ipsum. Totam similique magni illo magnam provident aperiam
-            reiciendis voluptate laudantium facere iste, itaque incidunt
-            officia amet, quo architecto atque eaque eos iusto exercitationem
-            sed et sunt, vitae quis. Qui, exercitationem. 
-          </p>
-        </div>
-      </section>
-
-      <section class="sliders">
-        <div class="ofertas">
-          <h2>Ofertas de la semana</h2>
-
-          <img src="./img/ofertaCaribe.png" alt="ofertas" />
-          <!-- <div class="arrow">
-            <img class="arrow-left" src="./img/icons/arrow-left.png" alt="acerca nosotros" />
-            <img class="arrow-right" src="./img/icons/arrow-right.png" alt="acerca nosotros" />
-          </div> -->
-          <!-- <img src="./img/ofertaPortoGa.png" alt="ofertas">
-                 <img src="./img/ofertaRepDom.png" alt="ofertas">    -->
-        </div>
-
-        <div class="clientes">
-          <h2>Nuestros clientes</h2>
-          <!-- <img src="./img/icons/arrow-left.png" alt="acerca nosotros">
-            <img src="./img/icons/arrow-right.png" alt="acerca nosotros"> -->
-          <img src="./img/clientesVarios.jpg" alt="clientes" />
-          <!-- <img src="./img/clientesCataratas.jpg" alt="clientes">
-                <img src="./img/clientesEuropa.png"     alt="clientes"> -->
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div class="formulario">
-          <p>Suscribite para recibir nuestras ofertas en tu mail</p>
-          <form class="form">
-            <input type="text" placeholder="Nombre" />
-            <input type="email" placeholder="Correo electrónico" name="email" />
-            <input class="btn-enviar-suscripcion" type="submit" value="Enviar" />
-          </form>
-        </div>
-
-        <div class="contacto-redes">
-          <p>Llamenos para averiguar sobre paquetes y viajes</p>
-          <p>Numero de telefono:</p>
-          <p>03442-156537358</p>
-          <p>Nuestras redes sociales</p>
-          <div class="iconos-redes-sociales">
-            <a href="https://facebook.com" target="_blank"><img src="./img/icons/facebook.png" alt="fb" /></a>
-            <a href="https://twitter.com" target="_blank"><img src="./img/icons/twitter.png" alt="tw" /></a>
-            <a href="https://instagram.com" target="_blank"><img src="./img/icons/instagram.png" alt="instagram" /></a>
+      <div class="main">
+        <section class="hero">
+          <div>
+            <h3>Agencia de Viajes</h3>
+            <h2>'El Viajero'</h2>
           </div>
-        </div>
+        </section>
 
-        <div class="contacto-desarrollador">
-          <p>Contactar desarrollador</p>
-          <a href="https://es.qr-code-generator.com/" target="_blank"><img src="./img/icons/codigo-qr.png"
-              alt="qr" /></a>
-          <a href="https://linkedin.com" target="_blank"><img src="./img/icons/linkedin.png" alt="linkedin" /></a>
-        </div>
-      </footer>
+        <section class="about-us">
+          <h2>Acerca de nosotros</h2>
+          <div class="texto-img">
+            <img src="./img/aboutUs.jpg" alt="acerca nosotros" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              cupiditate accusamus, praesentium alias explicabo debitis
+              asperiores cumque, maxime inventore, perferendis itaque
+              consectetur sapiente! Eligendi qui id dignissimos impedit,
+              corporis saepe. Eveniet impedit at corrupti illum! Quam iste
+              molestiae suscipit atque impedit ex numquam ratione alias quas qui
+              nesciunt odio ipsum, rerum recusandae, soluta blanditiis fugiat
+              rem, ea ullam ipsam quisquam! Perspiciatis nobis laudantium porro
+              rem blanditiis nam aperiam, at exercitationem repellendus corporis
+              amet modi quae unde animi ea assumenda placeat harum! Tenetur
+              maxime, saepe doloribus soluta voluptas obcaecati voluptatibus
+              ipsum. Totam similique magni illo magnam provident aperiam
+              reiciendis voluptate laudantium facere iste, itaque incidunt
+              officia amet, quo architecto atque eaque eos iusto exercitationem
+              sed et sunt, vitae quis. Qui, exercitationem.
+            </p>
+          </div>
+        </section>
+
+        <section class="sliders">
+          
+          <div>
+            <h2>Ofertas de la semana</h2>
+            <div class="ofertas slider">
+              <img src="./img/ofertaCaribe.png" alt="ofertas" />
+              <img src="./img/ofertaPortoGa.png" alt="ofertas" />
+              <img src="./img/ofertaRepDom.png" alt="ofertas" />
+            </div>
+          </div>
+
+          <div>
+            <h2>Nuestros clientes</h2>
+            <div class="clientes slider">
+              <img src="./img/clientesVarios.jpg" alt="clientes" />
+              <img src="./img/clientesCataratas.jpg" alt="clientes" />
+              <img src="./img/clientesEuropa.png" alt="clientes" />
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="formulario">
+            <p>Suscribite para recibir nuestras ofertas en tu mail</p>
+            <form class="form">
+              <input class="transf" type="text" placeholder="Nombre" />
+              <input
+                class="transf"
+                type="email"
+                placeholder="Correo electrónico"
+                name="email"
+              />
+              <input
+                class="btn-enviar-suscripcion"
+                type="submit"
+                value="Enviar"
+              />
+            </form>
+          </div>
+
+          <div class="contacto-redes">
+            <p>Llamenos para averiguar sobre paquetes y viajes</p>
+            <p>Numero de telefono:</p>
+            <p>03442-156537358</p>
+            <p>Nuestras redes sociales</p>
+            <div class="iconos-redes-sociales">
+              <a href="https://facebook.com" target="_blank"
+                ><img src="./img/icons/facebook.png" alt="fb"
+              /></a>
+              <a href="https://twitter.com" target="_blank"
+                ><img src="./img/icons/twitter.png" alt="tw"
+              /></a>
+              <a href="https://instagram.com" target="_blank"
+                ><img src="./img/icons/instagram.png" alt="instagram"
+              /></a>
+            </div>
+          </div>
+
+          <div class="contacto-desarrollador">
+            <p>Contactar desarrollador</p>
+            <a href="https://es.qr-code-generator.com/" target="_blank"
+              ><img src="./img/icons/codigo-qr.png" alt="qr"
+            /></a>
+            <a href="https://linkedin.com" target="_blank"
+              ><img src="./img/icons/linkedin.png" alt="linkedin"
+            /></a>
+          </div>
+        </footer>
+      </div>
     </div>
-  </div>
-</body>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/sss.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider").sss({
+          slideShow: true,
+        });
+      });
+    </script>
+  </body>
 </html>

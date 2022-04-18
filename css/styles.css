@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+/* 
+Prueba colores
+fondo #2a2a72 azul osc
+formularios #4c2885 violeta
+letras blancas */
+
+/* Original
+--nav-bar-color: #252a34a9 ;
+--background-color: #f0f0f0;
+--background-color-container: white ;
+--background-color-footer: steelblue;
+--background-color-footer-container: #2a4e6c; */
 
 :root {
     --nav-bar-color: #252a34a9 ;
@@ -245,7 +257,7 @@ body {
     box-shadow: 3px 3px 0px 0px #00000060;
 }
 
-.sliders .clientes img {
+.sliders .clientes .slider img {
     height: 90%;
     width: 90%;
 }
@@ -728,6 +740,22 @@ body {
 /* Fin contactar al desarrollador */
 /* Fin del footer */
 
+/* Transformaciones para inputs en formularios */
+.transf:focus {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.03);
+    border: 2px solid;
+
+}
+
+.transf-trans:focus {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.02) translateX(1%);
+    border: 2px solid;
+
+
+}
+
 /* ////////////////////////////////////////////////// */
 
 /* media queries */
@@ -1010,3 +1038,57 @@ body {
     }
 
 
+    /* Simple Super Slider  */
+    /* ////////////////////////////////////////////////// */
+
+    .sss {
+        height: 0;
+        margin: 0; 
+        padding: 0;
+        position: relative;
+        display: block;
+        overflow: hidden;
+    }
+    
+    .ssslide {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        overflow: hidden;
+    }
+    
+    .ssslide img {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: block;
+    }
+    
+    .sssnext, .sssprev {
+        width: 25px;
+        height: 100%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        background: url('../img/icons/arr.png') no-repeat;
+    }
+    
+    .sssprev {
+        left: 3%;
+        background-position: 0 50%;
+    }
+    
+    .sssnext {
+        right: 3%;
+        background-position: -26px 50%;
+    }
+    
+    .sssprev:hover, .sssnext:hover {
+        cursor: pointer;
+    }
