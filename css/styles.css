@@ -1,0 +1,1012 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+:root {
+    --nav-bar-color: #252a34a9 ;
+    --background-color: #f0f0f0;
+    --background-color-container: white ;
+    --background-color-footer: steelblue;
+    --background-color-footer-container: #2a4e6c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
+
+/* ////////////////////////////////////////////////// */
+
+
+/* Comienzo de navbar */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0px auto auto;
+    grid-template-areas: 
+    "navbar navbar"
+    "main main"
+    "footer footer";
+}
+
+.header {
+    background-color: var(--nav-bar-color);
+    position: fixed;
+    grid-area: navbar;
+}
+
+.header nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header nav a .logo {
+    height: 100px;
+    width: 100px;
+}
+
+.header nav a h1 {
+    font-family: 'Covered By Your Grace';
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: 0px 30px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.header nav ul li a {
+    padding: 7px 15px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: all 0.5s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header nav ul li a:hover {
+    color: #c0392b;
+}
+/* Navbar hasta aca */
+
+
+/* ////////////////////////////////////////////////// */
+
+
+/* index */
+.main {
+    grid-area: main;
+}
+/* Imagen de bienvenida */
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),   url("../img/bienvenida3.jpg");
+    background-color: steelblue;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero div {
+    font-family: 'Covered By Your Grace';
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    font-size: 4rem;
+}
+
+.hero .icono-arrow-down {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+}
+/* Fin de imagen de bienvenida */
+
+/* Seccion de acerca de nosotros */
+.about-us {
+    width: 80vw;
+    margin: 20px 0 15px 10%;
+    background-color: var(--background-color-container);
+    box-shadow: 3px 3px 0px 0px #00000060;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.about-us h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.about-us .texto-img {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-us .texto-img img {
+    height: 60%;
+    min-height: 200px;
+    width: 50%;
+    min-width: 290px;
+    padding: 2px;
+}
+
+.about-us .texto-img p {
+    width: 40%;
+    height: 60%;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.5rem;
+}
+/* Fin de seccion de acerca de nosotros */
+
+/* Comienzo seccion de ofertas y de nuestros clientes */
+.sliders {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.sliders h2 {
+    padding: 2% 0px 3% 0px;
+}
+
+.sliders .ofertas {
+    background-color: var(--background-color-container);
+    position: relative;
+    width: 40vw;
+    margin: 5px 5px 15px 5px;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    box-shadow: 3px 3px 0px 0px #00000060;
+    z-index: -1;
+}
+
+.sliders .ofertas img {
+    height: 90%;
+    max-height: 400px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.sliders .ofertas .arrow .arrow-left {
+    height: 60px;
+    width: 60px;
+    /* background-color: rgba(255, 255, 255, 0.541); */
+    /* border: 2px solid rgba(0, 0, 0, 0.4); */
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    
+}
+
+.sliders .ofertas .arrow .arrow-right {
+    height: 60px;
+    width: 60px;
+    /* background-color: rgba(255, 255, 255, 0.541); */
+    /* border: 2px solid rgba(0, 0, 0, 0.4); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.sliders .clientes {
+    height: auto;
+    background-color: var(--background-color-container);
+    width: 40vw;
+    margin: 5px 5px 15px 5px;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    box-shadow: 3px 3px 0px 0px #00000060;
+}
+
+.sliders .clientes img {
+    height: 90%;
+    width: 90%;
+}
+
+/* Fin de seccion de ofertas y de nuestros clientes */
+/* index hasta aca */
+
+
+/* ////////////////////////////////////////////////// */
+
+
+/* Comienzo pages/contacto */
+.contacto {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto .form {
+    background-color: var(--background-color-container);
+    height: auto;
+    width: 75vw;
+    margin: 125px 0px 30px 25px;
+    padding: 10px;
+    box-shadow: 2px 2px 0px 0px #00000069;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+.contacto .form p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 20px 0px 0px 15px ;
+}
+
+.contacto .form img {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.contacto .form input {
+    font-size: 1.3rem;
+    height: 30px;
+    width: 90%;
+    margin: 25px 10px 0px -1px;
+    padding-left: 5px;
+}
+
+.contacto .form .name {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.contacto .form .email {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.contacto .form .phone-number {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.contacto .form .area {
+    width: 125px;
+}
+
+.contacto .form .number {
+    width: 350px;
+}
+
+.contacto .form .phone-check {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+}
+
+.contacto .form .phone-check input {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.contacto .form .consulta textarea{
+    height: 30vh;
+    width: 80%;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid;
+    box-shadow: 3px 3px 0px 0px #00000077;
+    font-size: 1.5rem;
+}
+
+.contacto .form .btn-enviar-consulta {
+    background: lightblue;
+    height: 40px;
+    width: 200px;
+    margin: 40px;
+    border: 0;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contacto .form .btn-enviar-consulta:hover {
+    background-color: steelblue;
+}
+/* Fin contacto.html */
+
+
+/* ////////////////////////////////////////////////// */
+
+
+/* Comienzo opiniones.html */
+.opiniones {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.opiniones .opinion {
+    height: auto;
+    width: 75vw;
+    margin: 150px 0px 30px 0;
+    padding: 10px;
+    background-color: var(--background-color-container);
+    box-shadow: 0px 2px 2px 0px #00000069;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+
+.opiniones .opinion div {
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    background-image: url("../img/icons/opinion.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(2, 2, 2, 0.438);
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.opiniones .opinion div h3 {
+    margin: 7px 0px 0px 30px;
+    font-size: 1.5rem;
+}
+
+/* Formulario */
+.opinar {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.opinar .form {
+    width: 75vw;
+    margin: 23px 0px 30px 0;
+    padding: 10px;
+    background-color: var(--background-color-container);
+    box-shadow: 0px 2px 2px 0px #00000069;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.opinar .form p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 20px 0px 0px 15px ;
+}
+
+.opinar .form input {
+    font-size: 1.3rem;
+    height: 30px;
+    width: 70%;
+    margin: 25px 10px 0px -1px;
+    padding-left: 5px;
+}
+
+.opinar .form div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.opinar .form div img {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.opinar .form .name input {
+    width: 50%;
+}
+
+.opinar .form  textarea{
+    height: 30vh;
+    width: 60vw;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid;
+    box-shadow: 3px 3px 0px 0px #00000077;
+    font-size: 1.5rem;
+}
+
+.opinar .form .btn-enviar-opinion {
+    background: lightblue;
+    height: 40px;
+    width: 200px;
+    margin: 3%;
+    border: 0;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.opinar .form .btn-enviar-opinion:hover {
+    background-color: steelblue;
+}
+/* Fin opiniones.html */
+
+
+/* ////////////////////////////////////////////////// */
+
+
+/* Viajes en Argentina */
+.hero-viajesArg {
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),   url("../img/viajesArgBienvenida.jpg");
+    background-color: steelblue;
+    background-position: inherit;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-viajesArg h3 {
+    font-family: 'Covered By Your Grace';
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    font-size: 4rem;
+}
+
+.cardboard-viajesArg {
+    width: 90%;
+    margin: 20px 0px 20px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 15px;
+    align-items: flex-start;
+}
+
+.cardboard-viajesArg article {
+    min-height: 150px;
+    min-width: 150px;
+    background-color: var(--background-color-container);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 1.3rem;
+    
+}
+
+.cardboard-viajesArg article img {
+    height: 100%;
+    width: 100%;
+}
+
+.cardboard-viajesArg article p {
+    height: auto;
+    width: 90%;
+    padding: 15px;
+}
+/* Fin viajes en Argentina */
+
+
+/* ////////////////////////////////////////////////// */
+
+
+/* Viajes Internacionales */
+.hero-viajesInt {
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),   url("../img/viajesIntBienvenida.jpg");
+    background-color: steelblue;
+    background-position: inherit;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-viajesInt h3 {
+    font-family: 'Covered By Your Grace';
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    font-size: 4rem;
+}
+
+.cardboard-viajesInt {
+    width: 90%;
+    display: grid;
+    margin: 20px 0px 20px 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 15px;
+    align-items: flex-start;
+}
+
+.cardboard-viajesInt article {
+    background-color: var(--background-color-container);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.cardboard-viajesInt article img {
+    height: 100%;
+    width: 100%;
+}
+
+.cardboard-viajesInt article p {
+    height: auto;
+    width: 90%;
+    padding: 15px;
+}
+/* Fin viajes Internacionales */
+
+
+/* ////////////////////////////////////////////////// */
+
+
+/* Comienzo de footer */
+.footer {
+    grid-area: footer;
+    background-color: var(--background-color-footer);
+    height: auto;
+    width: 100vw;
+    color: #EAEAEA;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Formulario de subscripcion al email */
+.footer .formulario {
+    background-color: var(--background-color-footer-container);
+    height: 300px;
+    width: 480px;
+    margin: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .formulario p {
+    margin: 10px 13px ;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footer .formulario .form input {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    margin: 15px;
+    padding: 0px 0px 0px 5px;
+    font-size: 1.3rem;
+}
+
+.footer .formulario .form .btn-enviar-suscripcion {
+    background: lightblue;
+    height: 35px;
+    width: 200px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    justify-content: center;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.footer .formulario .form .btn-enviar-suscripcion:hover {
+    background-color: steelblue;
+}
+/* Fin de formulario de subscripcion al email */
+
+/* Numero de telefono y redes de contacto */
+.footer .contacto-redes {
+    background-color: var(--background-color-footer-container);
+    height: 300px;
+    width: 480px;
+    margin: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .contacto-redes p {
+    padding-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+.footer .contacto-redes .iconos-redes-sociales img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+/* Fin parte numero de telefono y redes de contacto */
+
+/* Contactar al desarrollador */
+.footer .contacto-desarrollador {
+    height: 100px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer .contacto-desarrollador p {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.footer .contacto-desarrollador img {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+}
+/* Fin contactar al desarrollador */
+/* Fin del footer */
+
+/* ////////////////////////////////////////////////// */
+
+/* media queries */
+@media screen and (max-width: 1280px) {
+
+    /* viajesArg.html */
+    .hero-viajesArg {
+        background-size: inherit;
+    }
+
+    /* viajesInt.html */
+    .hero-viajesInt {
+        background-size: inherit;
+    }
+}
+
+/* ////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1050px) {
+
+    /* NavBar */
+    .header nav {
+        justify-content: center;
+    }
+
+    .header nav ul {
+        justify-content: center;
+    }
+    /* Fin de NavBar */
+
+    /* index.html */
+    .about-us .texto-img p {
+        padding: 5px;
+        font-size: 1.3rem;
+    }
+
+    .sliders {
+        flex-direction: column;
+    }
+
+    .sliders .ofertas {
+        width: 80vw;
+    }
+
+    .sliders .clientes {
+        width: 80vw;
+    }
+    /* fin de index.html */
+
+    /* contacto.html */
+    .contacto .form {
+        margin-top: 170px; 
+    }
+    /* fin de contacto.html */
+
+    /* opiniones.html */
+    .opiniones .opinion {
+        margin-top: 165px;
+        width: 90vw;
+    }
+    .opinar .form {
+        width: 85vw;
+        align-content: unset;
+    }
+    /* Fin de opiniones.html */
+
+    /* viajesArg.html */
+    .cardboard-viajesArg {
+        width: 95%;
+        margin-left: 2.5%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    /* Fin de viajesArg.html */
+
+    /* viajesInt.html */
+    .cardboard-viajesInt {
+        width: 95%;
+        margin-left: 2.5%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    /* Fin de viajesInt.html */
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+    }
+    /* Fin de footer */
+}
+
+/* ////////////////////////////////////////////////// */
+
+@media screen and (max-width: 768px) {
+
+    html {
+        font-size: 55%;
+    }    
+    /* NavBar */
+    .header nav {
+        margin-top: 5px;
+        flex-direction: column;
+    }
+
+    .header nav a .logo {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .header nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header nav a {
+        justify-content: center;
+    }
+    /* Fin de NavBar */
+
+    /* index.html */
+    .about-us h2 {
+        padding: 10px;
+    }
+    .about-us .texto-img {
+        flex-direction: column-reverse;
+    }
+    .about-us .texto-img p {
+        width: 80%;
+    }
+    .sliders .ofertas {
+        width: 90vw;
+    }
+    .sliders .clientes {
+        width: 90vw;
+    }
+    /* Fin de index.html */
+
+    /* contacto.html */
+    .contacto .form {
+        margin: 220px 0px 30px 0%;
+        width: 95vw;
+    }
+    .contacto .form .phone-number {
+        margin-top: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contacto .form .area {
+        margin-top: 5px;
+    }
+    .contacto .form .number {
+        margin-top: 5px;
+        width: 350px;
+    }
+    .contacto .form .phone-check {
+        width: 55%;
+        margin: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+    }
+    .contacto .form .phone-check p {
+        margin-top: 5px;
+    }
+    .contacto .form .phone-check input {
+        margin: 10px 0 10px 100px;
+    }
+    /* fin de contacto.html */
+
+    /* opiniones.html */
+    .opiniones .opinion {
+        margin-top: 210px;
+    }
+    /* Fin de opiniones.html */
+
+    /* viajesArg.html */
+    .cardboard-viajesArg {
+        width: 90%;
+        margin-left: 5%;
+        grid-template-columns: 1fr;
+    }
+    /* Fin de viajesArg.html */
+
+    /* viajesInt.html */
+    .cardboard-viajesInt {
+        width: 90%;
+        margin-left: 5%;
+        grid-template-columns: 1fr;
+    }
+    /* Fin de viajesInt.html */
+
+}
+
+/* ////////////////////////////////////////////////// */
+
+@media screen and (max-width: 480px) {
+
+    html {
+        font-size: 50%;
+    }    
+
+    /* index.html */
+    .about-us {
+        width: 95vw;
+        margin: 15px 0 15px 2.5%;
+    }
+    .about-us .texto-img p {
+        width: 90%;
+        text-align: center;
+    }
+    /* fin de index.html */
+    
+     /* contacto.html */
+    .contacto .form .number {
+        width: 95%;
+    }
+    .contacto .form .consulta textarea{
+        width: 95%;
+    }
+    /* fin de contacto.html */
+
+    /* opiniones.html */
+    .opiniones .opinion {
+        width: 98%;
+        margin-bottom: 0px;
+    }
+    .opinar .form {
+        width: 95%;
+    }
+    .opinar .form input{
+        width: 80%;
+    }
+    .opinar .form .name {
+        margin-top: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .opinar .form .name .nomb {
+        margin-top: 5px;
+        width: 90%;
+    }
+    .opinar .form .name .ap {
+        margin-top: 5px;
+        width: 90%;
+    }
+    .opinar .form  textarea{
+        width: 90%;
+    }
+    /* Fin de opiniones.html */
+
+    /* Footer */
+    .footer .formulario {
+        height: 220px;
+        width: 96%;
+    }
+    .footer .contacto-redes {
+        height: 250px;
+        width: 96%;
+        margin: 5px;
+    }
+}
+
+/* ////////////////////////////////////////////////// */
+
+@media screen and (max-width: 320px) {
+
+    /* contacto.html */
+    .contacto .form {
+        margin: 210px 0 30px 0;
+        width: 100vw;
+    }
+    .contacto .form .number {
+        width: 280px;
+    }
+    .contacto .form .phone-check {
+        width: 90%;
+    }
+    /* fin de contacto.html */
+    }
+
+
