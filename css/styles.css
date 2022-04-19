@@ -57,13 +57,13 @@ body {
     background-color: var(--nav-bar-color);
     position: fixed;
     grid-area: navbar;
+    z-index: 100;
 }
 
 .header nav {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -83,8 +83,9 @@ body {
 
 .header nav a h1 {
     font-family: 'Covered By Your Grace';
-    font-size: 2rem;
+    font-size: 3.5rem;
     margin-left: 20px;
+    font-weight: lighter;
 }
 
 .header nav ul {
@@ -151,11 +152,13 @@ body {
 
 /* Seccion de acerca de nosotros */
 .about-us {
-    width: 80vw;
-    margin: 20px 0 15px 10%;
+    width: 80%;
+    margin: 2% 0 2% 10%;
     background-color: var(--background-color-container);
     box-shadow: 3px 3px 0px 0px #00000060;
     border: 2px solid rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    
 }
 
 .about-us h2 {
@@ -191,78 +194,81 @@ body {
 }
 /* Fin de seccion de acerca de nosotros */
 
-/* Comienzo seccion de ofertas y de nuestros clientes */
-.sliders {
+/* Comienzo seccion de ofertas*/
+.slider-ofertas {
+    margin: 1% 0 1% 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.sliders h2 {
-    padding: 2% 0px 3% 0px;
-}
-
-.sliders .ofertas {
-    background-color: var(--background-color-container);
-    position: relative;
-    width: 40vw;
-    margin: 5px 5px 15px 5px;
-    padding: 15px;
-    border: 2px solid rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
-    box-shadow: 3px 3px 0px 0px #00000060;
-    z-index: -1;
-}
-
-.sliders .ofertas img {
-    height: 90%;
-    max-height: 400px;
-    width: 90%;
-    max-width: 400px;
-}
-
-.sliders .ofertas .arrow .arrow-left {
-    height: 60px;
-    width: 60px;
-    /* background-color: rgba(255, 255, 255, 0.541); */
-    /* border: 2px solid rgba(0, 0, 0, 0.4); */
-    position: absolute;
-    top: 50%;
-    left: 0%;
+    
     
 }
 
-.sliders .ofertas .arrow .arrow-right {
-    height: 60px;
-    width: 60px;
-    /* background-color: rgba(255, 255, 255, 0.541); */
-    /* border: 2px solid rgba(0, 0, 0, 0.4); */
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.slider-ofertas h2 {
+    padding: 1% 0px 0% 0px;
+    font-size: 2rem;
+    text-align: center;
 }
 
-.sliders .clientes {
-    height: auto;
+.slider-ofertas .ofertas {
     background-color: var(--background-color-container);
-    width: 40vw;
+    height: auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85vw;
     margin: 5px 5px 15px 5px;
-    padding: 15px;
     border: 2px solid rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     box-shadow: 3px 3px 0px 0px #00000060;
 }
 
-.sliders .clientes .slider img {
-    height: 90%;
-    width: 90%;
+.slider-ofertas .ofertas article {
+    background-color: var(--background-color);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 1.8rem;
 }
 
-/* Fin de seccion de ofertas y de nuestros clientes */
+.slider-ofertas .ofertas img {
+    margin: 15px;
+    height: 45vh;
+    
+}
+/* Fin de seccion de ofertas */
+
+/* Comienzo seccion nuestros clientes */
+.slider-clientes {
+    margin: 1% 0 1% 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider-clientes h2 {
+    padding: 1% 0px 0% 0px;
+    font-size: 2rem;
+}
+
+.slider-clientes .clientes {
+    background-color: var(--background-color-container);
+    height: auto;
+    justify-content: center;
+    width: 80vw;
+    margin: 5px 5px 15px 5px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    box-shadow: 3px 3px 0px 0px #00000060;
+}
+
+
+/* Fin de seccion de nuestros clientes */
 /* index hasta aca */
 
 
@@ -291,7 +297,7 @@ body {
 }
 
 .contacto .form p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     margin: 20px 0px 0px 15px ;
 }
@@ -412,7 +418,7 @@ body {
     background-size: 30px;
     background-repeat: no-repeat;
     border: 1px solid rgba(2, 2, 2, 0.438);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     justify-content: center;
 }
 
@@ -441,13 +447,13 @@ body {
 }
 
 .opinar .form p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     margin: 20px 0px 0px 15px ;
 }
 
 .opinar .form input {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     height: 30px;
     width: 70%;
     margin: 25px 10px 0px -1px;
@@ -478,7 +484,7 @@ body {
     padding: 5px;
     border: 1px solid;
     box-shadow: 3px 3px 0px 0px #00000077;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .opinar .form .btn-enviar-opinion {
@@ -546,7 +552,7 @@ body {
     align-items: center;
     border: 1px solid #000;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     
 }
 
@@ -607,7 +613,7 @@ body {
     align-items: center;
     border: 1px solid #000;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 .cardboard-viajesInt article img {
@@ -631,7 +637,7 @@ body {
     grid-area: footer;
     background-color: var(--background-color-footer);
     height: auto;
-    width: 100vw;
+    width: 100%;
     color: #EAEAEA;
     display: flex;
     flex-wrap: wrap;
@@ -655,10 +661,10 @@ body {
 }
 
 .footer .formulario p {
-    margin: 10px 13px ;
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 100;
 }
 
 .footer .formulario .form input {
@@ -745,17 +751,12 @@ body {
     transition: ease-in-out 0.3s;
     transform: scale(1.03);
     border: 2px solid;
-
 }
-
 .transf-trans:focus {
     transition: ease-in-out 0.3s;
     transform: scale(1.02) translateX(1%);
     border: 2px solid;
-
-
 }
-
 /* ////////////////////////////////////////////////// */
 
 /* media queries */
@@ -775,10 +776,17 @@ body {
 /* ////////////////////////////////////////////////// */
 
 @media screen and (max-width: 1050px) {
+    
+    .grid-container {
+        grid-template-areas: 
+        "navbar"
+        "main"
+        "footer";
+    }
 
     /* NavBar */
     .header nav {
-        justify-content: center;
+        flex-direction: column;
     }
 
     .header nav ul {
@@ -786,22 +794,15 @@ body {
     }
     /* Fin de NavBar */
 
-    /* index.html */
+    /* index.html */ 
     .about-us .texto-img p {
         padding: 5px;
         font-size: 1.3rem;
     }
 
-    .sliders {
-        flex-direction: column;
-    }
-
-    .sliders .ofertas {
-        width: 80vw;
-    }
-
-    .sliders .clientes {
-        width: 80vw;
+    
+    .slider-ofertas .ofertas article {
+        margin: 10px;
     }
     /* fin de index.html */
 
@@ -864,6 +865,10 @@ body {
         height: 50px;
         width: 50px;
     }
+
+    .header nav a h1{
+        justify-content: center;
+    }
     
     .header nav ul {
         margin-top: 10px;
@@ -886,11 +891,16 @@ body {
     .about-us .texto-img p {
         width: 80%;
     }
-    .sliders .ofertas {
-        width: 90vw;
+   
+    .slider-ofertas .ofertas {
+        flex-direction: column;
+        width: 60vh;
     }
-    .sliders .clientes {
-        width: 90vw;
+    .slider-clientes .clientes {
+        width: 95vw;
+    }
+    .ssslide {
+        width: 70%;
     }
     /* Fin de index.html */
 
@@ -1040,36 +1050,33 @@ body {
 
     /* Simple Super Slider  */
     /* ////////////////////////////////////////////////// */
-
     .sss {
         height: 0;
-        margin: 0; 
+        margin: 2% 0 2% 0; 
         padding: 0;
         position: relative;
         display: block;
         overflow: hidden;
     }
-    
     .ssslide {
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        width: 60%;
+        margin: 0px;
+        padding: 0px;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: none;
         overflow: hidden;
     }
-    
     .ssslide img {
         max-width: 100%;
         height: auto;
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
         position: relative;
         display: block;
     }
-    
     .sssnext, .sssprev {
         width: 25px;
         height: 100%;
@@ -1078,17 +1085,16 @@ body {
         top: 0;
         background: url('../img/icons/arr.png') no-repeat;
     }
-    
     .sssprev {
         left: 3%;
         background-position: 0 50%;
     }
-    
     .sssnext {
         right: 3%;
         background-position: -26px 50%;
     }
-    
     .sssprev:hover, .sssnext:hover {
         cursor: pointer;
     }
+    /* ////////////////////////////////////////////////// */
+    /* Simple Super Slider  */

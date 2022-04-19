@@ -1,0 +1,101 @@
+git status (ver donde estoy parado)
+git add . (agregar los cambios al staging area, los archivos pasan de U de unstaging a A)
+git add . agrega todos los archivos, si quiero agregar uno solo tengo que poner el nombre de ese archivo
+por ejemplo git add index.html
+
+git commit -m "nombre del commit que agrego"
+
+Para ver el estado hago, git log
+
+--CREAR BRANCH
+PAra hacer cambios sin afectar la version estable, creo una rama
+
+git branch nombreDeLaRama
+
+Con git branch, veo donde estoy parado
+
+
+--MOVERME ENTRE BRANCHS(ramas)
+
+git checkout nombreDeLaRamaDondeQuieroIr
+
+git branch
+
+
+--BORRAR BRANCH
+
+Me muevo a al bracnh principal
+git branch (ver todos los nombre de las ramas y donde estoy parado)
+git checkout master
+git branch (para confirmar donde estoy)
+git branch -D nombreDelBranckABorrar
+git branch (verifico que se borro la rama)
+
+--Mover entre commits
+git log
+
+Veo el id number del commit al que quiero ir
+
+git commit id
+
+--MERGEO DE BRANCHS (unir ramas)
+Ir a la rama principal con git checkout
+git branch para ver que estoy en la rama principal(master)
+
+git merge nombreDelNuevoBranch
+
+Ej: Si el branch master, tenia nombre de ver 1.0 poner ver 1.01
+
+RESUMEN
+git init: indicarle que en ese directorio, donde ejecutamos este comando, será usado con GIT.
+git add .: agregar todos los archivos creados, modificados, eliminados al estado 2 (stage)
+git commit -m “Mensaje”: mensaje obligatorio para indicar que hemos cambiado por ejemplo, al estado 3.
+Git log --online: para conocer los códigos de los commits realizados.
+Git checkout rama: para cambiar de rama o ir a un commit específico (debemos conocer su código anteriormente) 
+git merge rama: debemos estar en MASTER para fusionar.
+git branch rama: creación de una rama (si queremos eliminar una rama ponemos git branch -D nombre-rama)
+
+
+𝐁𝐮𝐞𝐧 𝐝𝐢𝐚! 𝐁𝐮𝐞𝐧 𝐜𝐨𝐦𝐢𝐞𝐧𝐳𝐨 𝐝𝐞 𝐬𝐞𝐦𝐚𝐧𝐚! 𝐋𝐞𝐬 𝐭𝐫𝐚𝐢𝐠𝐨 𝐚𝐥𝐠𝐮𝐧𝐨𝐬 𝐠𝐞𝐧𝐞𝐫𝐚𝐝𝐨𝐫𝐞𝐬 𝐝𝐞 𝐂𝐒𝐒 𝐩𝐚𝐫𝐚 𝐪𝐮𝐞 𝐡𝐚𝐠𝐚𝐬 𝐮𝐧𝐚 𝐰𝐞𝐛 𝐫𝐞 𝐩𝐢𝐨𝐥𝐚! 👇👇👇
+
+
+
+𝟭) 𝗙𝗼𝗻𝗱𝗼𝘀 𝗖𝗦𝗦 
+
+https://lnkd.in/da4ArN-v
+
+
+
+𝟮) 𝗕𝗼𝗿𝗱𝗲𝘀 𝘆 𝗳𝗼𝗿𝗺𝗮𝘀 𝗶𝗻𝗰𝗿𝗲í𝗯𝗹𝗲𝘀
+
+https://lnkd.in/dptjfbYa
+
+
+
+𝟯) 𝗙𝗼𝗿𝗺𝗮𝘀 𝗻𝗲𝘂𝗺ó𝗿𝗳𝗶𝗰𝗮𝘀, 𝘀𝘂𝗽𝗲𝗿 𝗺𝗼𝗱𝗲𝗿𝗻𝗮𝘀
+
+https://lnkd.in/d7G_YVFA
+
+
+
+𝟰) 𝗙𝗼𝗻𝗱𝗼𝘀 𝗰𝗼𝗻 𝗽𝗮𝘁𝗿𝗼𝗻𝗲𝘀 𝗖𝗦𝗦
+
+https://heropatterns.com/
+
+
+
+𝟱) 𝗘𝗳𝗲𝗰𝘁𝗼 𝘃𝗶𝗱𝗿𝗶𝗼, 𝗵𝗶𝗲𝗹𝗼, 𝘁𝗿𝗮𝗻𝘀𝗽𝗮𝗿𝗲𝗻𝗰𝗶𝗮𝘀
+
+https://lnkd.in/dsawHXFe
+
+
+
+𝟲) 𝗘𝗳𝗲𝗰𝘁𝗼𝘀 𝗱𝗲 𝗢𝗹𝗮𝘀
+
+https://getwaves.io/
+
+
+
+𝟳) 𝗕𝗼𝘁𝗼𝗻𝗲𝘀 𝗖𝗦𝗦 𝗱𝗲 𝘁𝗼𝗱𝗼𝘀 𝘁𝗶𝗽𝗼𝘀
+
+https://lnkd.in/dMC29RNF
