@@ -140,9 +140,9 @@ body {
     font-size: 4rem;
 }
 
-.hero .icono-arrow-down {
-    height: 60px;
-    width: 60px;
+.hero img {
+    height: 75px;
+    width: 75px;
     position: absolute;
     top: 85%;
     left: 50%;
@@ -218,8 +218,8 @@ body {
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
-    width: 85vw;
-    margin: 5px 5px 15px 5px;
+    width: 80vw;
+    margin: 5px 2px 15px 2px;
     border: 2px solid rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     box-shadow: 3px 3px 0px 0px #00000060;
@@ -236,9 +236,13 @@ body {
     font-size: 1.8rem;
 }
 
+.slider-ofertas .ofertas article p {
+    margin: 10px;
+}
+
 .slider-ofertas .ofertas img {
     margin: 15px;
-    height: 45vh;
+    height: 30vh;
     
 }
 /* Fin de seccion de ofertas */
@@ -260,11 +264,11 @@ body {
     background-color: var(--background-color-container);
     height: auto;
     justify-content: center;
-    width: 80vw;
+    width: 60vw;
     margin: 5px 5px 15px 5px;
     border: 2px solid rgba(0, 0, 0, 0.4);
     border-radius: 2px;
-    box-shadow: 3px 3px 0px 0px #00000060;
+    box-shadow: 3px 3px 0px 0px #0000005d;
 }
 
 
@@ -759,6 +763,57 @@ body {
 }
 /* ////////////////////////////////////////////////// */
 
+/* Simple Super Slider  */
+    /* ////////////////////////////////////////////////// */
+    .sss {
+        height: 0;
+        margin: 2% 0 2% 0; 
+        padding: 0;
+        position: relative;
+        display: block;
+        overflow: hidden;
+    }
+    .ssslide {
+        width: 60%;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        overflow: hidden;
+    }
+    .ssslide img {
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        display: block;
+    }
+    .sssnext, .sssprev {
+        width: 25px;
+        height: 100%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        background: url('../img/icons/arr.png') no-repeat;
+    }
+    .sssprev {
+        left: 3%;
+        background-position: 0 50%;
+    }
+    .sssnext {
+        right: 3%;
+        background-position: -26px 50%;
+    }
+    .sssprev:hover, .sssnext:hover {
+        cursor: pointer;
+    }
+    /* ////////////////////////////////////////////////// */
+    /* Simple Super Slider  */
+
 /* media queries */
 @media screen and (max-width: 1280px) {
 
@@ -893,14 +948,14 @@ body {
     }
    
     .slider-ofertas .ofertas {
-        flex-direction: column;
-        width: 60vh;
+        flex-wrap: wrap;
+        width: 90vw;
     }
     .slider-clientes .clientes {
         width: 95vw;
     }
     .ssslide {
-        width: 70%;
+        width: 90%;
     }
     /* Fin de index.html */
 
@@ -957,7 +1012,6 @@ body {
         grid-template-columns: 1fr;
     }
     /* Fin de viajesInt.html */
-
 }
 
 /* ////////////////////////////////////////////////// */
@@ -1023,7 +1077,7 @@ body {
         width: 96%;
     }
     .footer .contacto-redes {
-        height: 250px;
+        height: 220px;
         width: 96%;
         margin: 5px;
     }
@@ -1046,55 +1100,3 @@ body {
     }
     /* fin de contacto.html */
     }
-
-
-    /* Simple Super Slider  */
-    /* ////////////////////////////////////////////////// */
-    .sss {
-        height: 0;
-        margin: 2% 0 2% 0; 
-        padding: 0;
-        position: relative;
-        display: block;
-        overflow: hidden;
-    }
-    .ssslide {
-        width: 60%;
-        margin: 0px;
-        padding: 0px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: none;
-        overflow: hidden;
-    }
-    .ssslide img {
-        max-width: 100%;
-        height: auto;
-        margin: 0px;
-        padding: 0px;
-        position: relative;
-        display: block;
-    }
-    .sssnext, .sssprev {
-        width: 25px;
-        height: 100%;
-        margin: 0;
-        position: absolute;
-        top: 0;
-        background: url('../img/icons/arr.png') no-repeat;
-    }
-    .sssprev {
-        left: 3%;
-        background-position: 0 50%;
-    }
-    .sssnext {
-        right: 3%;
-        background-position: -26px 50%;
-    }
-    .sssprev:hover, .sssnext:hover {
-        cursor: pointer;
-    }
-    /* ////////////////////////////////////////////////// */
-    /* Simple Super Slider  */
