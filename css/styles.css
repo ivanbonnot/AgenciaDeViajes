@@ -536,9 +536,20 @@ body {
     transform: scale(1.02) translateX(1%);
     border: 2px solid;
 }
+/* Transiciones iconos */
+.transf-icons {
+    transition: all 0.3s ease-in-out;
+}
 .transf-icons:hover {
-    transition: ease 0.5s;
-    transform: scale(1.05);
+    transform: scale(1.03);
+}
+/* Transiciones cards */
+.trans-cards{
+    transition: all 0.3s ease-in-out;
+}
+.trans-cards:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 2px 2px 2px #00000069;
 }
 /* ////////////////////////////////////////////////// */
 
