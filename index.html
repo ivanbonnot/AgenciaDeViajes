@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>'El Viajero' Agencia de viajes</title>
-    <link
-      rel="shortcut icon"
-      href="./img/icons/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
-    <div class="grid-container">
-      <header class="header">
-        <nav>
-          <a href="index.html"
-            ><img class="logo" src="./img/logo.png" alt="logo agencia" />
-            <h1>Agencia de Viajes - 'El Viajero'</h1>
-          </a>
-          <ul>
-            <li><a href="./pages/viajesInt.html">Viajes Internacionales</a></li>
-            <li><a href="./pages/viajesArg.html">Viajes en Argentina</a></li>
-            <li><a href="./pages/opiniones.html">Opiniones</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>'El Viajero' Agencia de viajes</title>
+  <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-      <div class="main">
-        <section class="hero">
-          <div>
-            <h3>Agencia de Viajes</h3>
-            <h2>'El Viajero'</h2>
-            <img src="./img/icons/arrow-down.png" alt="">
-          </div>
-        </section>
+<body>
+  <div class="grid-container">
+    <header class="header">
+      <nav>
+        <a href="index.html"><img class="logo" src="./img/logo.png" alt="logo agencia" />
+          <h1>Agencia de Viajes - 'El Viajero'</h1>
+        </a>
+        <ul>
+          <li><a href="./pages/viajesInt.html">Viajes Internacionales</a></li>
+          <li><a href="./pages/viajesArg.html">Viajes en Argentina</a></li>
+          <li><a href="./pages/opiniones.html">Opiniones</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <section class="about-us">
-          <h2>Acerca de nosotros</h2>
-          <div class="texto-img">
-            <img src="./img/aboutUs.jpg" alt="acerca nosotros" />
-            <p>
+    <div class="main">
+      <section class="hero">
+        <div>
+          <h3>Agencia de Viajes</h3>
+          <h2>'El Viajero'</h2>
+          <img src="./img/icons/arrow-down.png" alt="">
+        </div>
+      </section>
+
+      <section>
+        <div class="container mt-5">
+          <h2 class="text-center mb-3 fs-1 fw-bolder">Acerca de nosotros</h2>
+          <div class="row about">
+            <p class="col-lg-5 fs-3 p-5 lh-base text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
               cupiditate accusamus, praesentium alias explicabo debitis
               asperiores cumque, maxime inventore, perferendis itaque
@@ -60,95 +58,138 @@
               officia amet, quo architecto atque eaque eos iusto exercitationem
               sed et sunt, vitae quis. Qui, exercitationem.
             </p>
+            <img class="col-lg-6 m-5 img-thumbnail img-fluid" src="./img/aboutUs.jpg" alt="acerca nosotros" />
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="slider-ofertas">
-          <div>
-            <h2>Ofertas de la semana</h2>
-            <div class="ofertas">
-              <article>
-                <img src="./img/ofertaCaribe.png" alt="ofertas" />
-                <p>Lorem ip dolorum!</p>
-              </article>
 
-              <article>
-                <img src="./img/ofertaPortoGa.png" alt="ofertas" />
-                <p>Lorem ip dolorum!</p>
-              </article>
-
-              <article>
-                <img src="./img/ofertaRepDom.png" alt="ofertas" />
-                <p>Lorem ip dolorum!</p>
-              </article>
+      <section class="container mt-5">
+        <h2 class="text-center mb-3 fs-1 fw-bolder">Ofertas de ultima hora</h2>
+        <div class="row row-cols-3 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="./img/ofertaCaribe.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
             </div>
           </div>
-        </section>
-
-        <section class="slider-clientes">
-          <div>
-            <h2>Nuestros clientes</h2>
-            <div class="clientes slider">
-              <img src="./img/clientesVarios.jpg" alt="clientes" />
-              <img src="./img/clientesCataratas.jpg" alt="clientes" />
-              <img src="./img/clientesEuropa.png" alt="clientes" />
+          <div class="col">
+            <div class="card">
+              <img src="./img/ofertaPortoGa.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
             </div>
           </div>
-        </section>
-        
+          <div class="col">
+            <div class="card">
+              <img src="./img/ofertaRepDom.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/ofertaRepDom.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mt-5 mb-5">
+        <h2 class="text-center mb-3 fs-1 fw-bolder">Nuestros clientes</h2>
+        <div id="carouselExampleIndicators" class="col-lg-8 offset-lg-2 carousel clientes" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/clientesCataratas.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/clientesVarios.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/clientesEuropa.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="footer">
+      <div class="formulario row mt-4 mb-4">
+        <form class="g-5">
+          <p class="fs-3 text-center">Suscribite para recibir nuestras ofertas en tu mail</p>
+          <div class="mb-3 col-12">
+            <input type="text" class="form-control fs-4" placeholder="Nombre" aria-label="Nombre"
+              aria-describedby="basic-addon1">
+          </div>
+          <div class="mb-3 col-12">
+            <input class="form-control fs-4 " type="email" placeholder="Correo electrónico" name="email">
+          </div>
+          <div class="mb-4 d-grid gap-2 col-5 mx-auto">
+            <button type="submit" class="btn btn-primary fs-4 mt-2">Enviar</button>
+          </div>
+        </form>
       </div>
-
-      <footer class="footer">
-        <div class="formulario">
-          <p>Suscribite para recibir nuestras ofertas en tu mail</p>
-          <form class="form">
-            <input class="transf" type="text" placeholder="Nombre" />
-            <input
-              class="transf"
-              type="email"
-              placeholder="Correo electrónico"
-              name="email"
-            />
-            <input
-              class="btn-enviar-suscripcion"
-              type="submit"
-              value="Enviar"
-            />
-          </form>
-        </div>
-
-        <div class="contacto-desarrollador">
-          <p>Contactar desarrollador</p>
-          <a href="https://es.qr-code-generator.com/" target="_blank"
-            ><img src="./img/icons/codigo-qr.png" alt="qr"
-          /></a>
-          <a href="https://linkedin.com" target="_blank"
-            ><img src="./img/icons/linkedin.png" alt="linkedin"
-          /></a>
-        </div>
-
-        <div class="contacto-redes">
+  
+      <div class="contacto-desarrollador mb-4">
+        <p class="fs-4 text-center text-dark">Contactar desarrollador</p>
+        <a href="https://es.qr-code-generator.com/" target="_blank"><img src="../img/icons/codigo-qr.png" alt="qr" class="transf-icons"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="../img/icons/linkedin.png" alt="linkedin" class="transf-icons"></a>
+      </div>
+  
+      <div class="contacto-redes">
+        <div class="mt-5 fs-3 text-center">
           <p>Llamenos para averiguar sobre paquetes y viajes</p>
           <p>Numero de telefono:</p>
           <p>03442-156537358</p>
           <p>Nuestras redes sociales</p>
-          <div class="iconos-redes-sociales">
-            <a href="https://facebook.com" target="_blank"
-              ><img src="./img/icons/facebook.png" alt="fb"
-            /></a>
-            <a href="https://twitter.com" target="_blank"
-              ><img src="./img/icons/twitter.png" alt="tw"
-            /></a>
-            <a href="https://instagram.com" target="_blank"
-              ><img src="./img/icons/instagram.png" alt="instagram"
-            /></a>
-          </div>
         </div>
-      </footer>
-    </div>
+        <div class="iconos-redes-sociales d-flex justify-content-center mx-auto">
+          <a href="https://facebook.com" target="_blank"><img src="../img/icons/facebook.png" alt="fb" class="transf-icons"></a>
+          <a href="https://twitter.com" target="_blank"><img src="../img/icons/twitter.png" alt="tw" class="transf-icons"></a>
+          <a href="https://instagram.com" target="_blank"><img src="../img/icons/instagram.png" alt="instagram" class="transf-icons"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="js/sss.min.js"></script>
-    <script src="js/sss.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+</body>
+
 </html>

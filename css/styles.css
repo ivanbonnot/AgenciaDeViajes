@@ -16,16 +16,11 @@ letras blancas */
 
 :root {
     --nav-bar-color: #252a34a9 ;
-    --background-color: #f0f0f0;
+    --background-color: background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(220,248,255,1) 100%);
     --background-color-container: white ;
     --background-color-footer: steelblue;
     --background-color-footer-container: #2a4e6c;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 html {
@@ -139,6 +134,12 @@ body {
     text-align: center;
     font-size: 4rem;
 }
+.hero div h2 {
+    font-size: 4rem;
+}
+.hero div h3 {
+    font-size: 4rem;
+}
 
 .hero img {
     height: 75px;
@@ -151,127 +152,31 @@ body {
 /* Fin de imagen de bienvenida */
 
 /* Seccion de acerca de nosotros */
-.about-us {
-    width: 80%;
-    margin: 2% 0 2% 10%;
+.about {
     background-color: var(--background-color-container);
     box-shadow: 3px 3px 0px 0px #00000060;
     border: 2px solid rgba(0, 0, 0, 0.4);
-    justify-content: center;
-    
-}
-
-.about-us h2 {
-    padding: 20px;
-    text-align: center;
-    font-size: 2.2rem;
-}
-
-.about-us .texto-img {
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.about-us .texto-img img {
-    height: 60%;
-    min-height: 200px;
-    width: 50%;
-    min-width: 290px;
-    padding: 2px;
-}
-
-.about-us .texto-img p {
-    width: 40%;
-    height: 60%;
-    padding: 15px;
-    text-align: left;
-    font-size: 1.5rem;
+    border-radius: 2px;
 }
 /* Fin de seccion de acerca de nosotros */
 
 /* Comienzo seccion de ofertas*/
-.slider-ofertas {
-    margin: 1% 0 1% 0;
-    display: flex;
-    justify-content: center;
-    
-    
-}
-
-.slider-ofertas h2 {
-    padding: 1% 0px 0% 0px;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.slider-ofertas .ofertas {
+.ofertas {
     background-color: var(--background-color-container);
-    height: auto;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 80vw;
-    margin: 5px 2px 15px 2px;
     border: 2px solid rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     box-shadow: 3px 3px 0px 0px #00000060;
 }
-
-.slider-ofertas .ofertas article {
-    background-color: var(--background-color);
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #000;
-    text-align: center;
-    font-size: 1.8rem;
-}
-
-.slider-ofertas .ofertas article p {
-    margin: 10px;
-}
-
-.slider-ofertas .ofertas img {
-    margin: 15px;
-    height: 30vh;
-    
-}
 /* Fin de seccion de ofertas */
 
 /* Comienzo seccion nuestros clientes */
-.slider-clientes {
-    margin: 1% 0 1% 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.slider-clientes h2 {
-    padding: 1% 0px 0% 0px;
-    font-size: 2rem;
-}
-
-.slider-clientes .clientes {
+.clientes {
     background-color: var(--background-color-container);
-    height: auto;
-    justify-content: center;
-    width: 60vw;
-    margin: 5px 5px 15px 5px;
     border: 2px solid rgba(0, 0, 0, 0.4);
     border-radius: 2px;
-    box-shadow: 3px 3px 0px 0px #0000005d;
+    box-shadow: 3px 3px 0px 0px #00000060;
+    padding: 5px;
 }
-
-
 /* Fin de seccion de nuestros clientes */
 /* index hasta aca */
 
@@ -534,43 +439,7 @@ body {
     text-align: center;
     font-size: 4rem;
 }
-
-.cardboard-viajesArg {
-    width: 90%;
-    margin: 20px 0px 20px 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 25px;
-    grid-row-gap: 15px;
-    align-items: flex-start;
-}
-
-.cardboard-viajesArg article {
-    min-height: 150px;
-    min-width: 150px;
-    background-color: var(--background-color-container);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #000;
-    text-align: center;
-    font-size: 1.8rem;
-    
-}
-
-.cardboard-viajesArg article img {
-    height: 100%;
-    width: 100%;
-}
-
-.cardboard-viajesArg article p {
-    height: auto;
-    width: 90%;
-    padding: 15px;
-}
-/* Fin viajes en Argentina */
+/* Fin viajes Argentina */
 
 
 /* ////////////////////////////////////////////////// */
@@ -597,39 +466,6 @@ body {
     text-align: center;
     font-size: 4rem;
 }
-
-.cardboard-viajesInt {
-    width: 90%;
-    display: grid;
-    margin: 20px 0px 20px 5%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 25px;
-    grid-row-gap: 15px;
-    align-items: flex-start;
-}
-
-.cardboard-viajesInt article {
-    background-color: var(--background-color-container);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #000;
-    text-align: center;
-    font-size: 1.8rem;
-}
-
-.cardboard-viajesInt article img {
-    height: 100%;
-    width: 100%;
-}
-
-.cardboard-viajesInt article p {
-    height: auto;
-    width: 90%;
-    padding: 15px;
-}
 /* Fin viajes Internacionales */
 
 
@@ -643,10 +479,12 @@ body {
     height: auto;
     width: 100%;
     color: #EAEAEA;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "form desarrollador redes";
+    justify-items: center;
     align-items: center;
 }
 
@@ -655,46 +493,7 @@ body {
     background-color: var(--background-color-footer-container);
     height: 300px;
     width: 480px;
-    margin: 20px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.footer .formulario p {
-    margin: 10px;
-    padding-top: 10px;
-    font-size: 1.8rem;
-    font-weight: 100;
-}
-
-.footer .formulario .form input {
-    display: flex;
-    height: 30px;
-    width: 100%;
-    margin: 15px;
-    padding: 0px 0px 0px 5px;
-    font-size: 1.3rem;
-}
-
-.footer .formulario .form .btn-enviar-suscripcion {
-    background: lightblue;
-    height: 35px;
-    width: 200px;
-    margin-top: 20px;
-    border: 0;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    justify-content: center;
-    cursor: pointer;
-    transition: ease-in-out 0.3s;
-}
-
-.footer .formulario .form .btn-enviar-suscripcion:hover {
-    background-color: steelblue;
+    grid-area: form;
 }
 /* Fin de formulario de subscripcion al email */
 
@@ -703,21 +502,8 @@ body {
     background-color: var(--background-color-footer-container);
     height: 300px;
     width: 480px;
-    margin: 20px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    grid-area: redes;
 }
-
-.footer .contacto-redes p {
-    padding-top: 10px;
-    font-size: 1.8rem;
-    font-weight: 100;
-}
-
 .footer .contacto-redes .iconos-redes-sociales img{
     height: 50px;
     width: 50px;
@@ -729,19 +515,8 @@ body {
 .footer .contacto-desarrollador {
     height: 100px;
     width: 120px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    grid-area: desarrollador;
 }
-
-.footer .contacto-desarrollador p {
-    color: black;
-    font-size: 1.2rem;
-    font-weight: 100;
-    text-align: center;
-}
-
 .footer .contacto-desarrollador img {
     height: 50px;
     width: 50px;
@@ -761,60 +536,20 @@ body {
     transform: scale(1.02) translateX(1%);
     border: 2px solid;
 }
+.transf-icons:hover {
+    transition: ease 0.5s;
+    transform: scale(1.05);
+}
 /* ////////////////////////////////////////////////// */
 
-/* Simple Super Slider  */
-    /* ////////////////////////////////////////////////// */
-    .sss {
-        height: 0;
-        margin: 2% 0 2% 0; 
-        padding: 0;
-        position: relative;
-        display: block;
-        overflow: hidden;
-    }
-    .ssslide {
-        width: 60%;
-        margin: 0px;
-        padding: 0px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: none;
-        overflow: hidden;
-    }
-    .ssslide img {
-        max-width: 100%;
-        height: auto;
-        margin: 0px;
-        padding: 0px;
-        position: relative;
-        display: block;
-    }
-    .sssnext, .sssprev {
-        width: 25px;
-        height: 100%;
-        margin: 0;
-        position: absolute;
-        top: 0;
-        background: url('../img/icons/arr.png') no-repeat;
-    }
-    .sssprev {
-        left: 3%;
-        background-position: 0 50%;
-    }
-    .sssnext {
-        right: 3%;
-        background-position: -26px 50%;
-    }
-    .sssprev:hover, .sssnext:hover {
-        cursor: pointer;
-    }
-    /* ////////////////////////////////////////////////// */
-    /* Simple Super Slider  */
-
 /* media queries */
+@media screen and (min-width: 1600px) {
+    .about {
+        width: 90vw;
+        margin-left: -10vw;
+    }
+}
+
 @media screen and (max-width: 1280px) {
 
     /* viajesArg.html */
@@ -830,7 +565,7 @@ body {
 
 /* ////////////////////////////////////////////////// */
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1060px) {
     
     .grid-container {
         grid-template-areas: 
@@ -878,27 +613,22 @@ body {
     }
     /* Fin de opiniones.html */
 
-    /* viajesArg.html */
-    .cardboard-viajesArg {
-        width: 95%;
-        margin-left: 2.5%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
-    /* Fin de viajesArg.html */
-
-    /* viajesInt.html */
-    .cardboard-viajesInt {
-        width: 95%;
-        margin-left: 2.5%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
-    /* Fin de viajesInt.html */
-
     /* Footer */
     .footer {
-        flex-direction: column;
+        grid-template-areas: 
+        "form"
+        "redes"
+        "desarrollador";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 150px;
+    }
+     .footer .formulario {
+        height: 280px;
+       
+    }
+    .footer .contacto-redes {
+        height: 280px;
+        margin-bottom: 10px;
     }
     /* Fin de footer */
 }
@@ -935,29 +665,7 @@ body {
         justify-content: center;
     }
     /* Fin de NavBar */
-
-    /* index.html */
-    .about-us h2 {
-        padding: 10px;
-    }
-    .about-us .texto-img {
-        flex-direction: column-reverse;
-    }
-    .about-us .texto-img p {
-        width: 80%;
-    }
-   
-    .slider-ofertas .ofertas {
-        flex-wrap: wrap;
-        width: 90vw;
-    }
-    .slider-clientes .clientes {
-        width: 95vw;
-    }
-    .ssslide {
-        width: 90%;
-    }
-    /* Fin de index.html */
+    
 
     /* contacto.html */
     .contacto .form {
@@ -996,22 +704,14 @@ body {
         margin-top: 210px;
     }
     /* Fin de opiniones.html */
+}
 
-    /* viajesArg.html */
-    .cardboard-viajesArg {
-        width: 90%;
-        margin-left: 5%;
-        grid-template-columns: 1fr;
-    }
-    /* Fin de viajesArg.html */
+/* ////////////////////////////////////////////////// */
 
-    /* viajesInt.html */
-    .cardboard-viajesInt {
-        width: 90%;
-        margin-left: 5%;
-        grid-template-columns: 1fr;
+@media screen and (max-width: 576px) {
+    .cards-viajes {
+        margin: 8px;
     }
-    /* Fin de viajesInt.html */
 }
 
 /* ////////////////////////////////////////////////// */
@@ -1073,11 +773,11 @@ body {
 
     /* Footer */
     .footer .formulario {
-        height: 220px;
+        height: 200px;
         width: 96%;
     }
     .footer .contacto-redes {
-        height: 220px;
+        height: 200px;
         width: 96%;
         margin: 5px;
     }
