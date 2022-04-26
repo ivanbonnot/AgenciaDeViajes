@@ -49,32 +49,33 @@ body {
 }
 
 .header {
-    background-color: var(--nav-bar-color);
-    position: fixed;
+    /* background-color: var(--nav-bar-color); */
     grid-area: navbar;
-    z-index: 100;
+    position: fixed;
+    z-index: 100; 
 }
 
 .header nav {
+    background-color: var(--nav-bar-color)!important;
     width: 100vw;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 .header nav a {
-    text-decoration: none;
-    color: white;
+    /* text-decoration: none;
+    color: white; */
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
+/* 
 .header nav a .logo {
     height: 100px;
     width: 100px;
-}
+} */
 
 .header nav a h1 {
     font-family: 'Covered By Your Grace';
@@ -82,12 +83,20 @@ body {
     margin-left: 20px;
     font-weight: lighter;
 }
+/* 
+.header  {
+    font-family: 'Covered By Your Grace';
+    font-size: 3.5rem;
+    margin-left: 20px;
+    font-weight: lighter;
+} */
 
 .header nav ul {
-    list-style: none;
+    /* list-style: none;
     margin: 0px 30px;
+     */
+     flex-grow: 1;
     display: flex;
-    flex-grow: 1;
     justify-content: flex-end;
 }
 
@@ -101,8 +110,9 @@ body {
 }
 
 .header nav ul li a:hover {
+    transform: scale(1.015);
     color: #c0392b;
-}
+} 
 /* Navbar hasta aca */
 
 
@@ -135,10 +145,10 @@ body {
     font-size: 4rem;
 }
 .hero div h2 {
-    font-size: 4rem;
+    font-size: 5.5rem;
 }
 .hero div h3 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .hero img {
@@ -155,8 +165,12 @@ body {
 .about {
     background-color: var(--background-color-container);
     box-shadow: 3px 3px 0px 0px #00000060;
-    border: 2px solid rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 2px;
+}
+.about img {
+    max-width: 700px;
+    max-height: 526px;
 }
 /* Fin de seccion de acerca de nosotros */
 
@@ -554,12 +568,7 @@ body {
 /* ////////////////////////////////////////////////// */
 
 /* media queries */
-@media screen and (min-width: 1600px) {
-    .about {
-        width: 90vw;
-        margin-left: -10vw;
-    }
-}
+
 
 @media screen and (max-width: 1280px) {
 
@@ -594,18 +603,6 @@ body {
         justify-content: center;
     }
     /* Fin de NavBar */
-
-    /* index.html */ 
-    .about-us .texto-img p {
-        padding: 5px;
-        font-size: 1.3rem;
-    }
-
-    
-    .slider-ofertas .ofertas article {
-        margin: 10px;
-    }
-    /* fin de index.html */
 
     /* contacto.html */
     .contacto .form {
@@ -733,17 +730,6 @@ body {
         font-size: 50%;
     }    
 
-    /* index.html */
-    .about-us {
-        width: 95vw;
-        margin: 15px 0 15px 2.5%;
-    }
-    .about-us .texto-img p {
-        width: 90%;
-        text-align: center;
-    }
-    /* fin de index.html */
-    
      /* contacto.html */
     .contacto .form .number {
         width: 95%;
