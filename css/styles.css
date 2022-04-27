@@ -49,7 +49,6 @@ body {
 }
 
 .header {
-    /* background-color: var(--nav-bar-color); */
     grid-area: navbar;
     position: fixed;
     z-index: 100; 
@@ -58,24 +57,13 @@ body {
 .header nav {
     background-color: var(--nav-bar-color)!important;
     width: 100vw;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; */
 }
 
 .header nav a {
-    /* text-decoration: none;
-    color: white; */
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-/* 
-.header nav a .logo {
-    height: 100px;
-    width: 100px;
-} */
 
 .header nav a h1 {
     font-family: 'Covered By Your Grace';
@@ -83,24 +71,15 @@ body {
     margin-left: 20px;
     font-weight: lighter;
 }
-/* 
-.header  {
-    font-family: 'Covered By Your Grace';
-    font-size: 3.5rem;
-    margin-left: 20px;
-    font-weight: lighter;
-} */
 
 .header nav ul {
-    /* list-style: none;
-    margin: 0px 30px;
-     */
      flex-grow: 1;
     display: flex;
     justify-content: flex-end;
 }
 
 .header nav ul li a {
+    margin-right: 5px;
     padding: 7px 15px;
     font-size: 1.5rem;
     letter-spacing: 1px;
@@ -593,17 +572,7 @@ body {
         "main"
         "footer";
     }
-
-    /* NavBar */
-    .header nav {
-        flex-direction: column;
-    }
-
-    .header nav ul {
-        justify-content: center;
-    }
-    /* Fin de NavBar */
-
+    
     /* contacto.html */
     .contacto .form {
         margin-top: 170px; 
@@ -630,14 +599,7 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 150px;
     }
-     .footer .formulario {
-        height: 280px;
-       
-    }
-    .footer .contacto-redes {
-        height: 280px;
-        margin-bottom: 10px;
-    }
+     
     /* Fin de footer */
 }
 
@@ -648,33 +610,16 @@ body {
     html {
         font-size: 55%;
     }    
+
     /* NavBar */
-    .header nav {
-        margin-top: 5px;
-        flex-direction: column;
-    }
-
-    .header nav a .logo {
-        height: 50px;
-        width: 50px;
-    }
-
-    .header nav a h1{
-        justify-content: center;
-    }
-    
-    .header nav ul {
-        margin-top: 10px;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     .header nav a {
-        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .header nav a h1 {
+        font-size: 2.5rem;
     }
     /* Fin de NavBar */
     
-
     /* contacto.html */
     .contacto .form {
         margin: 220px 0px 30px 0%;
@@ -770,11 +715,11 @@ body {
 
     /* Footer */
     .footer .formulario {
-        height: 200px;
+        height: auto;
         width: 96%;
     }
     .footer .contacto-redes {
-        height: 200px;
+        height: auto;
         width: 96%;
         margin: 5px;
     }
