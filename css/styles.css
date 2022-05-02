@@ -92,7 +92,7 @@ body {
     transform: scale(1.015);
     color: #c0392b;
 } 
-
+/* Tamaño de icono de cuando el navbar se achica */
 .header .navbar-toggler-icon {
     width: 20px;
     height: 20px;
@@ -589,6 +589,7 @@ body {
         "footer";
     }
     /* NavBar */
+   
     .header nav .logo-size {
         width: 50px;
         height: 50px;
@@ -600,7 +601,7 @@ body {
 
     /* contacto.html */
     .contacto .form {
-        margin-top: 170px; 
+        margin-top: 100px; 
     }
     /* fin de contacto.html */
 
@@ -624,8 +625,20 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 150px;
     }
-     
     /* Fin de footer */
+}
+
+/* ////////////////////////////////////////////////// */
+
+@media screen and (max-width: 870px) {
+    .header nav a h1 {
+        margin-left: 0px;
+    }
+    
+    .header nav ul li a {
+        margin-right: 0px;
+        padding: 0px 0px;
+    }
 }
 
 /* ////////////////////////////////////////////////// */
@@ -636,11 +649,9 @@ body {
         font-size: 55%;
     }    
 
-    
-    
     /* contacto.html */
     .contacto .form {
-        margin: 220px 0px 30px 0%;
+        margin: 100px 0px 30px 0%;
         width: 95vw;
     }
     .contacto .form .phone-number {
