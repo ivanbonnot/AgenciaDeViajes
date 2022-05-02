@@ -56,6 +56,11 @@ git merge rama: debemos estar en MASTER para fusionar.
 git branch rama: creación de una rama (si queremos eliminar una rama ponemos git branch -D nombre-rama)
 git push origin nombreDelBranchaPushear
 
+
+Si tira error al pushear y el codigo esta bien y coincide con github, entonces forzamos el push con
+git push -f origin master
+
+
 𝐁𝐮𝐞𝐧 𝐝𝐢𝐚! 𝐁𝐮𝐞𝐧 𝐜𝐨𝐦𝐢𝐞𝐧𝐳𝐨 𝐝𝐞 𝐬𝐞𝐦𝐚𝐧𝐚! 𝐋𝐞𝐬 𝐭𝐫𝐚𝐢𝐠𝐨 𝐚𝐥𝐠𝐮𝐧𝐨𝐬 𝐠𝐞𝐧𝐞𝐫𝐚𝐝𝐨𝐫𝐞𝐬 𝐝𝐞 𝐂𝐒𝐒 𝐩𝐚𝐫𝐚 𝐪𝐮𝐞 𝐡𝐚𝐠𝐚𝐬 𝐮𝐧𝐚 𝐰𝐞𝐛 𝐫𝐞 𝐩𝐢𝐨𝐥𝐚! 👇👇👇
 
 
