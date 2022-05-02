@@ -649,6 +649,10 @@ body {
         font-size: 55%;
     }    
 
+    .header nav a h1 {
+        margin-left: 10px;
+    }
+
     /* contacto.html */
     .contacto .form {
         margin: 100px 0px 30px 0%;
@@ -683,7 +687,7 @@ body {
 
     /* opiniones.html */
     .opiniones .opinion {
-        margin-top: 210px;
+        margin-top: 100px;
     }
     /* Fin de opiniones.html */
 }
@@ -760,7 +764,6 @@ body {
 
     /* contacto.html */
     .contacto .form {
-        margin: 210px 0 30px 0;
         width: 100vw;
     }
     .contacto .form .number {
