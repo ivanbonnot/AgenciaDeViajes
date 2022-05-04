@@ -1,8 +1,5 @@
- :root {
-     --background-color: background: rgb(255,255,255);
-     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(220,248,255,1) 100%);
- }
 
+$background-color: background rgb(255,255,255) background linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(220,248,255,1) 100%);
 $nav-bar-color: #252a34a9 ;
 $background-color-container: white ;
 $background-color-footer: steelblue;
@@ -14,7 +11,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background-color);
+    background-color: $background-color;
     overflow-x: hidden;
 }
 

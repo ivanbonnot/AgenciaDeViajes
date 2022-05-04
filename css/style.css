@@ -1,14 +1,10 @@
 @charset "UTF-8";
-:root {
-  --background-color: background: rgb(255,255,255);
-  background: linear-gradient(180deg, white 0%, white 0%, #dcf8ff 100%); }
-
 html {
   font-size: 62.5%; }
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--background-color);
+  background-color: background white background linear-gradient(180deg, white 0%, white 0%, #dcf8ff 100%);
   overflow-x: hidden; }
 
 .grid-container {
