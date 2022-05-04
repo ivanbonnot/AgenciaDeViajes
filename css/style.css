@@ -13,6 +13,7 @@ body {
   grid-template-rows: auto auto 0.5fr;
   grid-template-areas: "navbar navbar" "main main" "footer footer"; }
 
+/* Navbar */
 .header {
   grid-area: navbar;
   position: fixed;
