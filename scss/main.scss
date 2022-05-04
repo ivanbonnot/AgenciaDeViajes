@@ -1,11 +1,12 @@
-:root {
-    --nav-bar-color: #252a34a9 ;
-    --background-color: background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(220,248,255,1) 100%);
-    --background-color-container: white ;
-    --background-color-footer: steelblue;
-    --background-color-footer-container: #2a4e6c;
-}
+ :root {
+     --background-color: background: rgb(255,255,255);
+     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(220,248,255,1) 100%);
+ }
+
+$nav-bar-color: #252a34a9 ;
+$background-color-container: white ;
+$background-color-footer: steelblue;
+$background-color-footer-container: #2a4e6c;
 
 html {
     font-size: 62.5%;
@@ -33,7 +34,7 @@ body {
     z-index: 100;
 
     nav {
-        background-color: var(--nav-bar-color) !important;
+        background-color: $nav-bar-color !important;
         width: 100vw;
 
         a {
@@ -126,10 +127,9 @@ body {
     }
 }
 
-
 /* Seccion de acerca de nosotros */
 .about {
-    background-color: var(--background-color-container);
+    background-color: $background-color-container;
     box-shadow: 3px 3px 0px 0px #00000060;
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 2px;
@@ -140,21 +140,17 @@ body {
     }
 }
 
-/* Fin de seccion de acerca de nosotros */
-
 /* Comienzo seccion de ofertas*/
 .ofertas {
-    background-color: var(--background-color-container);
+    background-color: $background-color-container;
     border: 2px solid rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     box-shadow: 3px 3px 0px 0px #00000060;
 }
 
-/* Fin de seccion de ofertas */
-
 /* Comienzo seccion nuestros clientes */
 .clientes {
-    background-color: var(--background-color-container);
+    background-color: $background-color-container;
     border: 2px solid rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     box-shadow: 3px 3px 0px 0px #00000060;
@@ -172,8 +168,6 @@ body {
     width: 50px;
     height: 50px;
 }
-
-/* Fin de seccion de nuestros clientes */
 /* index hasta aca */
 
 /* ////////////////////////////////////////////////// */
@@ -185,7 +179,7 @@ body {
     justify-content: center;
 
     .form {
-        background-color: var(--background-color-container);
+        background-color: $background-color-container;
         height: auto;
         width: 75vw;
         margin: 125px 0px 30px 25px;
@@ -288,11 +282,7 @@ body {
     }
 }
 
-/* Fin contacto.html */
-
-
 /* ////////////////////////////////////////////////// */
-
 
 /* Comienzo opiniones.html */
 .opiniones {
@@ -305,7 +295,7 @@ body {
         width: 75vw;
         margin: 150px 0px 30px 0;
         padding: 10px;
-        background-color: var(--background-color-container);
+        background-color: $background-color-container;
         box-shadow: 0px 2px 2px 0px #00000069;
         display: flex;
         flex-direction: column;
@@ -341,7 +331,7 @@ body {
         width: 75vw;
         margin: 23px 0px 30px 0;
         padding: 10px;
-        background-color: var(--background-color-container);
+        background-color: $background-color-container;
         box-shadow: 0px 2px 2px 0px #00000069;
         display: flex;
         flex-direction: column;
@@ -409,9 +399,6 @@ body {
     }
 }
 
-/* Fin opiniones.html */
-
-
 /* ////////////////////////////////////////////////// */
 
 /* Viajes en Argentina */
@@ -436,11 +423,7 @@ body {
     }
 }
 
-/* Fin viajes Argentina */
-
-
 /* ////////////////////////////////////////////////// */
-
 
 /* Viajes Internacionales */
 .hero-viajesInt {
@@ -464,15 +447,12 @@ body {
     }
 }
 
-/* Fin viajes Internacionales */
-
-
 /* ////////////////////////////////////////////////// */
 
 /* Comienzo de footer */
 .footer {
     grid-area: footer;
-    background-color: var(--background-color-footer);
+    background-color: $background-color-footer;
     height: auto;
     width: 100%;
     color: #EAEAEA;
@@ -485,14 +465,14 @@ body {
     align-items: center;
 
     .formulario {
-        background-color: var(--background-color-footer-container);
+        background-color: $background-color-footer-container;
         height: 300px;
         width: 480px;
         grid-area: form;
     }
 
     .contacto-redes {
-        background-color: var(--background-color-footer-container);
+        background-color: $background-color-footer-container;
         height: 300px;
         width: 480px;
         grid-area: redes;
