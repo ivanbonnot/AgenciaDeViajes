@@ -1,0 +1,418 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $background-color;
+    overflow-x: hidden;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 0.5fr;
+    grid-template-areas:
+        "navbar navbar"
+        "main main"
+        "footer footer";
+}
+
+/* --- index --- */
+
+main {
+    grid-area: main;
+}
+
+/* Imagen de bienvenida */
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bienvenida3.jpg");
+    background-color: steelblue;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        font-family: 'Covered By Your Grace';
+        color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        font-size: 4rem;
+
+        h2 {
+            font-size: 5.5rem;
+        }
+
+        h3 {
+            font-size: 5rem;
+        }
+    }
+
+    img {
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -15%);
+    }
+}
+
+/* Seccion de acerca de nosotros */
+.about {
+    background-color: white;
+    box-shadow: 3px 3px 0px 0px #00000060;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+}
+
+.about img {
+    max-width: 700px;
+    max-height: 526px;
+}
+
+/* Comienzo seccion de ofertas*/
+.ofertas {
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    box-shadow: 3px 3px 0px 0px #00000060;
+}
+
+/* Comienzo seccion nuestros clientes */
+.clientes {
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    box-shadow: 3px 3px 0px 0px #00000060;
+    padding: 5px;
+}
+
+.carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+}
+
+/* index hasta aca */
+
+/* ////////////////////////////////////////////////// */
+
+/* --- Comienzo pages/contacto --- */
+.contacto {
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    .form {
+        background-color: $background-color-container;
+        height: auto;
+        width: 75vw;
+        margin: 125px 0px 30px 25px;
+        padding: 10px;
+        box-shadow: 2px 2px 0px 0px #00000069;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        overflow-x: hidden;
+
+        p {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin: 20px 0px 0px 15px;
+        }
+
+        img {
+            display: flex;
+            height: 30px;
+            width: 30px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        input {
+            font-size: 1.8rem;
+            height: 30px;
+            width: 90%;
+            margin: 25px 10px 0px -1px;
+            padding-left: 5px;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        .email {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        .phone-number {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        .area {
+            width: 125px;
+        }
+
+        .number {
+            width: 350px;
+        }
+
+        .phone-check {
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: flex-start;
+            font-size: 1.2rem;
+
+            input {
+                height: 20px;
+                width: 20px;
+                margin-left: 10px;
+            }
+        }
+
+        .consulta textarea {
+            height: 30vh;
+            width: 80%;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid;
+            box-shadow: 3px 3px 0px 0px #00000077;
+            font-size: 1.5rem;
+        }
+
+        .btn-enviar-consulta {
+            background: lightblue;
+            height: 40px;
+            width: 200px;
+            margin: 40px;
+            border: 0;
+            border-radius: 5px;
+            transition: ease-in-out 0.3s;
+            font-size: 1.5rem;
+            cursor: pointer;
+            text-align: center;
+
+            &:hover {
+                background-color: steelblue;
+            }
+        }
+    }
+}
+
+/* ////////////////////////////////////////////////// */
+
+/* --- Comienzo opiniones.htm --- */
+.opiniones {
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    .opinion {
+        height: auto;
+        width: 75vw;
+        margin: 150px 0px 30px 0;
+        padding: 10px;
+        background-color: $background-color-container;
+        box-shadow: 0px 2px 2px 0px #00000069;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+
+        div {
+            height: auto;
+            margin: 10px;
+            padding: 5px;
+            background-image: url("../img/icons/opinion.png");
+            background-size: 30px;
+            background-repeat: no-repeat;
+            border: 1px solid rgba(2, 2, 2, 0.438);
+            font-size: 1.8rem;
+            justify-content: center;
+
+            h3 {
+                margin: 7px 0px 0px 30px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+/* Formulario */
+.opinar {
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    .form {
+        width: 75vw;
+        margin: 23px 0px 30px 0;
+        padding: 10px;
+        background-color: $background-color-container;
+        box-shadow: 0px 2px 2px 0px #00000069;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+
+        p {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin: 20px 0px 0px 15px;
+        }
+
+        input {
+            font-size: 1.8rem;
+            height: 30px;
+            width: 70%;
+            margin: 25px 10px 0px -1px;
+            padding-left: 5px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+
+            img {
+                display: flex;
+                height: 30px;
+                width: 30px;
+                border: 1px solid rgb(0, 0, 0);
+            }
+        }
+
+        .name input {
+            width: 50%;
+        }
+
+        textarea {
+            height: 30vh;
+            width: 60vw;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid;
+            box-shadow: 3px 3px 0px 0px #00000077;
+            font-size: 1.8rem;
+        }
+
+        .btn-enviar-opinion {
+            background: lightblue;
+            height: 40px;
+            width: 200px;
+            margin: 3%;
+            border: 0;
+            border-radius: 5px;
+            transition: ease-in-out 0.3s;
+            font-size: 1.5rem;
+            cursor: pointer;
+            text-align: center;
+
+            &:hover {
+                background-color: steelblue;
+            }
+        }
+
+    }
+}
+
+/* ////////////////////////////////////////////////// */
+
+/* --- Viajes en Argentina --- */
+
+.hero-viajesArg {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/viajesArgBienvenida.jpg");
+    background-color: steelblue;
+    background-position: inherit;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        font-family: 'Covered By Your Grace';
+        color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        font-size: 4rem;
+    }
+}
+
+/* ////////////////////////////////////////////////// */
+
+/* --- Viajes Internacionales --- */
+
+.hero-viajesInt {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/viajesIntBienvenida.jpg");
+    background-color: steelblue;
+    background-position: inherit;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        font-family: 'Covered By Your Grace';
+        color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        font-size: 4rem;
+    }
+}
+
+/* ////////////////////////////////////////////////// */
+
+/* Transformaciones para inputs en formularios */
+.transf:focus {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.03);
+    border: 2px solid;
+}
+
+.transf-trans:focus {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.02) translateX(1%);
+    border: 2px solid;
+}
+
+/* Transiciones iconos */
+.transf-icons {
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.trans-cards {
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 2px 2px 2px 2px #00000069;
+    }
+}
+
+/* ////////////////////////////////////////////////// */

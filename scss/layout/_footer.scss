@@ -1,0 +1,47 @@
+/* Comienzo de footer */
+.footer {
+    grid-area: footer;
+    background-color: $background-color-footer;
+    height: auto;
+    width: 100%;
+    color: #EAEAEA;
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "form desarrollador redes";
+    justify-items: center;
+    align-items: center;
+
+    .formulario {
+        background-color: $background-color-footer-container;
+        height: 300px;
+        width: 480px;
+        grid-area: form;
+    }
+
+    .contacto-redes {
+        background-color: $background-color-footer-container;
+        height: 300px;
+        width: 480px;
+        grid-area: redes;
+    }
+
+    .iconos-redes-sociales img {
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+    }
+
+    .contacto-desarrollador {
+        height: 100px;
+        width: 120px;
+        grid-area: desarrollador;
+
+        img {
+            height: 50px;
+            width: 50px;
+            margin-left: 5px;
+        }
+    }
+}

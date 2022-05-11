@@ -1,17 +1,13 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 html {
   font-size: 62.5%; }
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: background white background linear-gradient(180deg, white 0%, white 0%, #dcf8ff 100%);
-  overflow-x: hidden; }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto 0.5fr;
-  grid-template-areas: "navbar navbar" "main main" "footer footer"; }
 
 /* Navbar */
 .header {
@@ -50,9 +46,19 @@ body {
     width: 20px;
     height: 20px; }
 
-/* Navbar hasta aca */
-/* index */
-.main {
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: background white background linear-gradient(180deg, white 0%, white 0%, #dcf8ff 100%);
+  overflow-x: hidden; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 0.5fr;
+  grid-template-areas: "navbar navbar" "main main" "footer footer"; }
+
+/* --- index --- */
+main {
   grid-area: main; }
 
 /* Imagen de bienvenida */
@@ -91,9 +97,10 @@ body {
   box-shadow: 3px 3px 0px 0px #00000060;
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 2px; }
-  .about img {
-    max-width: 700px;
-    max-height: 526px; }
+
+.about img {
+  max-width: 700px;
+  max-height: 526px; }
 
 /* Comienzo seccion de ofertas*/
 .ofertas {
@@ -122,7 +129,7 @@ body {
 
 /* index hasta aca */
 /* ////////////////////////////////////////////////// */
-/* Comienzo pages/contacto */
+/* --- Comienzo pages/contacto --- */
 .contacto {
   height: auto;
   display: flex;
@@ -204,7 +211,7 @@ body {
         background-color: steelblue; }
 
 /* ////////////////////////////////////////////////// */
-/* Comienzo opiniones.html */
+/* --- Comienzo opiniones.htm --- */
 .opiniones {
   height: auto;
   display: flex;
@@ -293,7 +300,7 @@ body {
         background-color: steelblue; }
 
 /* ////////////////////////////////////////////////// */
-/* Viajes en Argentina */
+/* --- Viajes en Argentina --- */
 .hero-viajesArg {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/viajesArgBienvenida.jpg");
   background-color: steelblue;
@@ -313,7 +320,7 @@ body {
     font-size: 4rem; }
 
 /* ////////////////////////////////////////////////// */
-/* Viajes Internacionales */
+/* --- Viajes Internacionales --- */
 .hero-viajesInt {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/viajesIntBienvenida.jpg");
   background-color: steelblue;
@@ -331,6 +338,30 @@ body {
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
     font-size: 4rem; }
+
+/* ////////////////////////////////////////////////// */
+/* Transformaciones para inputs en formularios */
+.transf:focus {
+  transition: ease-in-out 0.3s;
+  transform: scale(1.03);
+  border: 2px solid; }
+
+.transf-trans:focus {
+  transition: ease-in-out 0.3s;
+  transform: scale(1.02) translateX(1%);
+  border: 2px solid; }
+
+/* Transiciones iconos */
+.transf-icons {
+  transition: all 0.3s ease-in-out; }
+  .transf-icons:hover {
+    transform: scale(1.03); }
+
+.trans-cards {
+  transition: all 0.3s ease-in-out; }
+  .trans-cards:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 2px 2px 2px #00000069; }
 
 /* ////////////////////////////////////////////////// */
 /* Comienzo de footer */
@@ -369,27 +400,135 @@ body {
       width: 50px;
       margin-left: 5px; }
 
-/* Transformaciones para inputs en formularios */
-.transf:focus {
-  transition: ease-in-out 0.3s;
-  transform: scale(1.03);
-  border: 2px solid; }
-
-.transf-trans:focus {
-  transition: ease-in-out 0.3s;
-  transform: scale(1.02) translateX(1%);
-  border: 2px solid; }
-
-/* Transiciones iconos */
-.transf-icons {
-  transition: all 0.3s ease-in-out; }
-  .transf-icons:hover {
-    transform: scale(1.03); }
-
-.trans-cards {
-  transition: all 0.3s ease-in-out; }
-  .trans-cards:hover {
-    transform: scale(1.01);
-    box-shadow: 2px 2px 2px 2px #00000069; }
+/* ////////////////////////////////////////////////// */
+/* media queries */
+@media screen and (max-width: 1280px) {
+  /* viajesArg.html */
+  .hero-viajesArg {
+    background-size: inherit; }
+  /* viajesInt.html */
+  .hero-viajesInt {
+    background-size: inherit; } }
 
 /* ////////////////////////////////////////////////// */
+@media screen and (max-width: 1060px) {
+  .grid-container {
+    grid-template-areas: "navbar" "main" "footer"; }
+  /* NavBar */
+  .header nav .logo-size {
+    width: 50px;
+    height: 50px; }
+  .header nav a h1 {
+    font-size: 2.5rem; }
+  /* contacto.html */
+  .contacto .form {
+    margin-top: 100px; }
+  /* opiniones.html */
+  .opiniones .opinion {
+    margin-top: 165px;
+    width: 90vw; }
+  .opinar .form {
+    width: 85vw;
+    align-content: unset; }
+  /* Footer */
+  .footer {
+    grid-template-areas: "form" "redes" "desarrollador";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 150px; } }
+
+/* ////////////////////////////////////////////////// */
+@media screen and (max-width: 870px) {
+  /* NavBar */
+  .header nav a h1 {
+    margin-left: 0px; }
+  .header nav ul li a {
+    margin-right: 0px;
+    padding: 0px 0px; } }
+
+/* ////////////////////////////////////////////////// */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%; }
+  /* NavBar */
+  .header nav a h1 {
+    margin-left: 10px; }
+  /* contacto.html */
+  .contacto .form {
+    margin: 100px 0px 30px 0%;
+    width: 95vw; }
+  .contacto .form .phone-number {
+    margin-top: 25px;
+    flex-direction: column;
+    align-items: flex-start; }
+  .contacto .form .area {
+    margin-top: 5px; }
+  .contacto .form .number {
+    margin-top: 5px;
+    width: 350px; }
+  .contacto .form .phone-check {
+    width: 55%;
+    margin: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid rgba(0, 0, 0, 0.4); }
+  .contacto .form .phone-check p {
+    margin-top: 5px; }
+  .contacto .form .phone-check input {
+    margin: 10px 0 10px 100px; }
+  /* opiniones.html */
+  .opiniones .opinion {
+    margin-top: 100px; } }
+
+/* ////////////////////////////////////////////////// */
+@media screen and (max-width: 576px) {
+  /* index.html */
+  .cards-viajes {
+    margin: 8px; } }
+
+/* ////////////////////////////////////////////////// */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%; }
+  /* contacto.html */
+  .contacto .form .number {
+    width: 95%; }
+  .contacto .form .consulta textarea {
+    width: 95%; }
+  /* opiniones.html */
+  .opiniones .opinion {
+    width: 98%;
+    margin-bottom: 0px; }
+  .opinar .form {
+    width: 95%; }
+  .opinar .form input {
+    width: 80%; }
+  .opinar .form .name {
+    margin-top: 25px;
+    flex-direction: column;
+    align-items: flex-start; }
+  .opinar .form .name .nomb {
+    margin-top: 5px;
+    width: 90%; }
+  .opinar .form .name .ap {
+    margin-top: 5px;
+    width: 90%; }
+  .opinar .form textarea {
+    width: 90%; }
+  /* Footer */
+  .footer .formulario {
+    height: auto;
+    width: 96%; }
+  .footer .contacto-redes {
+    height: auto;
+    width: 96%;
+    margin: 5px; } }
+
+/* ////////////////////////////////////////////////// */
+@media screen and (max-width: 320px) {
+  /* contacto.html */
+  .contacto .form {
+    width: 100vw; }
+  .contacto .form .number {
+    width: 280px; }
+  .contacto .form .phone-check {
+    width: 90%; } }

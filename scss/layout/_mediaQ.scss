@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
-
 /* ////////////////////////////////////////////////// */
 
 /* media queries */
-
 
 @media screen and (max-width: 1280px) {
 
@@ -23,60 +18,60 @@
 /* ////////////////////////////////////////////////// */
 
 @media screen and (max-width: 1060px) {
-    
+
     .grid-container {
-        grid-template-areas: 
-        "navbar"
-        "main"
-        "footer";
+        grid-template-areas:
+            "navbar"
+            "main"
+            "footer";
     }
+
     /* NavBar */
-   
     .header nav .logo-size {
         width: 50px;
         height: 50px;
     }
+
     .header nav a h1 {
         font-size: 2.5rem;
     }
-    /* Fin de NavBar */
 
     /* contacto.html */
     .contacto .form {
-        margin-top: 100px; 
+        margin-top: 100px;
     }
-    /* fin de contacto.html */
 
     /* opiniones.html */
     .opiniones .opinion {
         margin-top: 165px;
         width: 90vw;
     }
+
     .opinar .form {
         width: 85vw;
         align-content: unset;
     }
-    /* Fin de opiniones.html */
 
     /* Footer */
     .footer {
-        grid-template-areas: 
-        "form"
-        "redes"
-        "desarrollador";
+        grid-template-areas:
+            "form"
+            "redes"
+            "desarrollador";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 150px;
     }
-    /* Fin de footer */
 }
 
 /* ////////////////////////////////////////////////// */
 
 @media screen and (max-width: 870px) {
+
+    /* NavBar */
     .header nav a h1 {
         margin-left: 0px;
     }
-    
+
     .header nav ul li a {
         margin-right: 0px;
         padding: 0px 0px;
@@ -89,8 +84,9 @@
 
     html {
         font-size: 55%;
-    }    
+    }
 
+    /* NavBar */
     .header nav a h1 {
         margin-left: 10px;
     }
@@ -100,18 +96,22 @@
         margin: 100px 0px 30px 0%;
         width: 95vw;
     }
+
     .contacto .form .phone-number {
         margin-top: 25px;
         flex-direction: column;
         align-items: flex-start;
     }
+
     .contacto .form .area {
         margin-top: 5px;
     }
+
     .contacto .form .number {
         margin-top: 5px;
         width: 350px;
     }
+
     .contacto .form .phone-check {
         width: 55%;
         margin: 15px;
@@ -119,24 +119,26 @@
         align-items: flex-start;
         border: 1px solid rgba(0, 0, 0, 0.4);
     }
+
     .contacto .form .phone-check p {
         margin-top: 5px;
     }
+
     .contacto .form .phone-check input {
         margin: 10px 0 10px 100px;
     }
-    /* fin de contacto.html */
 
     /* opiniones.html */
     .opiniones .opinion {
         margin-top: 100px;
     }
-    /* Fin de opiniones.html */
 }
 
 /* ////////////////////////////////////////////////// */
 
 @media screen and (max-width: 576px) {
+
+    /* index.html */
     .cards-viajes {
         margin: 8px;
     }
@@ -148,51 +150,57 @@
 
     html {
         font-size: 50%;
-    }    
+    }
 
-     /* contacto.html */
+    /* contacto.html */
     .contacto .form .number {
         width: 95%;
     }
-    .contacto .form .consulta textarea{
+
+    .contacto .form .consulta textarea {
         width: 95%;
     }
-    /* fin de contacto.html */
 
     /* opiniones.html */
     .opiniones .opinion {
         width: 98%;
         margin-bottom: 0px;
     }
+
     .opinar .form {
         width: 95%;
     }
-    .opinar .form input{
+
+    .opinar .form input {
         width: 80%;
     }
+
     .opinar .form .name {
         margin-top: 25px;
         flex-direction: column;
         align-items: flex-start;
     }
+
     .opinar .form .name .nomb {
         margin-top: 5px;
         width: 90%;
     }
+
     .opinar .form .name .ap {
         margin-top: 5px;
         width: 90%;
     }
-    .opinar .form  textarea{
+
+    .opinar .form textarea {
         width: 90%;
     }
-    /* Fin de opiniones.html */
 
     /* Footer */
     .footer .formulario {
         height: auto;
         width: 96%;
     }
+
     .footer .contacto-redes {
         height: auto;
         width: 96%;
@@ -208,11 +216,12 @@
     .contacto .form {
         width: 100vw;
     }
+
     .contacto .form .number {
         width: 280px;
     }
+
     .contacto .form .phone-check {
         width: 90%;
     }
-    /* fin de contacto.html */
-    }
+}

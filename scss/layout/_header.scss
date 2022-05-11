@@ -1,0 +1,51 @@
+/* Navbar */
+.header {
+    grid-area: navbar;
+    position: fixed;
+    z-index: 100;
+
+    nav {
+        background-color: $nav-bar-color  !important;
+        width: 100vw;
+
+        a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            h1 {
+                font-family: 'Covered By Your Grace';
+                font-size: 3.5rem;
+                margin-left: 20px;
+                font-weight: lighter;
+            }
+        }
+
+        ul {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            li a {
+                margin-right: 15px;
+                padding: 7px 15px;
+                font-size: 1.5rem;
+                letter-spacing: 1px;
+                transition: all 0.5s ease-in-out;
+                font-weight: bold;
+                text-transform: uppercase;
+
+                &:hover {
+                    transform: scale(1.015);
+                    color: #c0392b;
+                }
+            }
+        }
+    }
+
+    /* Tamaño de icono de cuando el navbar se achica */
+    .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
