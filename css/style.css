@@ -55,8 +55,13 @@ body {
           transform: scale(1.015);
           color: #c0392b; }
   .header .navbar-toggler-icon {
-    width: 20px;
-    height: 20px; }
+    height: 20px;
+    width: 20px; }
+
+.about, .ofertas, .clientes, .contacto .form, .contacto .form .consulta textarea, .opiniones .opinion, .opinar .form, .opinar .form textarea {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 0px 0px #00000060;
+  border-radius: 2px; }
 
 /* --- index --- */
 main {
@@ -94,10 +99,7 @@ main {
 
 /* Seccion de acerca de nosotros */
 .about {
-  background-color: white;
-  box-shadow: 3px 3px 0px 0px #00000060;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  border-radius: 2px; }
+  background-color: white; }
 
 .about img {
   max-width: 700px;
@@ -105,28 +107,22 @@ main {
 
 /* Comienzo seccion de ofertas*/
 .ofertas {
-  background-color: white;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  border-radius: 2px;
-  box-shadow: 3px 3px 0px 0px #00000060; }
+  background-color: white; }
 
 /* Comienzo seccion nuestros clientes */
 .clientes {
   background-color: white;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  border-radius: 2px;
-  box-shadow: 3px 3px 0px 0px #00000060;
   padding: 5px; }
 
 .carousel-control-prev-icon {
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 50px;
   width: 50px;
-  height: 50px; }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 50px;
   width: 50px;
-  height: 50px; }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 /* index hasta aca */
 /* ////////////////////////////////////////////////// */
@@ -136,12 +132,11 @@ main {
   display: flex;
   justify-content: center; }
   .contacto .form {
-    background-color: white;
     height: auto;
     width: 75vw;
+    background-color: white;
     margin: 125px 0px 30px 25px;
     padding: 10px;
-    box-shadow: 2px 2px 0px 0px #00000069;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -152,14 +147,14 @@ main {
       font-weight: 500;
       margin: 20px 0px 0px 15px; }
     .contacto .form img {
-      display: flex;
       height: 30px;
       width: 30px;
+      display: flex;
       border: 1px solid black; }
     .contacto .form input {
-      font-size: 1.8rem;
       height: 30px;
       width: 90%;
+      font-size: 1.8rem;
       margin: 25px 10px 0px -1px;
       padding-left: 5px; }
     .contacto .form .name {
@@ -194,13 +189,11 @@ main {
       width: 80%;
       margin: 5px;
       padding: 5px;
-      border: 1px solid;
-      box-shadow: 3px 3px 0px 0px #00000077;
       font-size: 1.5rem; }
     .contacto .form .btn-enviar-consulta {
-      background: lightblue;
       height: 40px;
       width: 200px;
+      background: lightblue;
       margin: 40px;
       border: 0;
       border-radius: 5px;
@@ -223,7 +216,6 @@ main {
     margin: 150px 0px 30px 0;
     padding: 10px;
     background-color: white;
-    box-shadow: 0px 2px 2px 0px #00000069;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -252,7 +244,6 @@ main {
     margin: 23px 0px 30px 0;
     padding: 10px;
     background-color: white;
-    box-shadow: 0px 2px 2px 0px #00000069;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -262,9 +253,9 @@ main {
       font-weight: 500;
       margin: 20px 0px 0px 15px; }
     .opinar .form input {
-      font-size: 1.8rem;
       height: 30px;
       width: 70%;
+      font-size: 1.8rem;
       margin: 25px 10px 0px -1px;
       padding-left: 5px; }
     .opinar .form div {
@@ -272,9 +263,9 @@ main {
       flex-direction: row;
       align-items: flex-end; }
       .opinar .form div img {
-        display: flex;
         height: 30px;
         width: 30px;
+        display: flex;
         border: 1px solid black; }
     .opinar .form .name input {
       width: 50%; }
@@ -283,13 +274,11 @@ main {
       width: 60vw;
       margin: 5px;
       padding: 5px;
-      border: 1px solid;
-      box-shadow: 3px 3px 0px 0px #00000077;
       font-size: 1.8rem; }
     .opinar .form .btn-enviar-opinion {
-      background: lightblue;
       height: 40px;
       width: 200px;
+      background: lightblue;
       margin: 3%;
       border: 0;
       border-radius: 5px;
@@ -303,13 +292,13 @@ main {
 /* ////////////////////////////////////////////////// */
 /* --- Viajes en Argentina --- */
 .hero-viajesArg {
+  height: 60vh;
+  width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/viajesArgBienvenida.jpg");
   background-color: steelblue;
   background-position: inherit;
   background-size: contain;
   background-attachment: fixed;
-  height: 60vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -323,13 +312,13 @@ main {
 /* ////////////////////////////////////////////////// */
 /* --- Viajes Internacionales --- */
 .hero-viajesInt {
+  height: 60vh;
+  width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/viajesIntBienvenida.jpg");
   background-color: steelblue;
   background-position: inherit;
   background-size: contain;
   background-attachment: fixed;
-  height: 60vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -362,7 +351,8 @@ main {
   transition: all 0.3s ease-in-out; }
   .trans-cards:hover {
     transform: scale(1.01);
-    box-shadow: 2px 2px 2px 2px #00000069; }
+    box-shadow: 2px 2px 2px 2px #00000069;
+    background-color: #f1f1f1; }
 
 /* ////////////////////////////////////////////////// */
 /* Comienzo de footer */
@@ -417,8 +407,8 @@ main {
     grid-template-areas: "navbar" "main" "footer"; }
   /* NavBar */
   .header nav .logo-size {
-    width: 50px;
-    height: 50px; }
+    height: 50px;
+    width: 50px; }
   .header nav a h1 {
     font-size: 2.5rem; }
   /* contacto.html */

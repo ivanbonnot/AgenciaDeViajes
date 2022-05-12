@@ -1,3 +1,19 @@
+// extends
+
+%boxform {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 0px 0px #00000060;
+    border-radius: 2px;
+}
+
+// map
+
+$colores: (
+    hero: steelblue,
+    about: white,
+    ofertas: white,
+    clientes: white,
+);
 
 /* --- index --- */
 
@@ -7,10 +23,9 @@ main {
 
 /* Imagen de bienvenida */
 .hero {
-    height: 100vh;
-    width: 100vw;
+    @include sizes(100vh ,100vw );
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bienvenida3.jpg");
-    background-color: steelblue;
+    background-color: map-get($colores, hero);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -35,8 +50,7 @@ main {
     }
 
     img {
-        height: 75px;
-        width: 75px;
+        @include sizes(75px ,75px );
         position: absolute;
         top: 85%;
         left: 50%;
@@ -46,10 +60,8 @@ main {
 
 /* Seccion de acerca de nosotros */
 .about {
-    background-color: white;
-    box-shadow: 3px 3px 0px 0px #00000060;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
+    @extend %boxform;
+    background-color: map-get($colores, about);
 }
 
 .about img {
@@ -59,31 +71,25 @@ main {
 
 /* Comienzo seccion de ofertas*/
 .ofertas {
-    background-color: white;
-    border: 2px solid rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
-    box-shadow: 3px 3px 0px 0px #00000060;
+    @extend %boxform;
+    background-color: map-get($colores, ofertas);
 }
 
 /* Comienzo seccion nuestros clientes */
 .clientes {
-    background-color: white;
-    border: 2px solid rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
-    box-shadow: 3px 3px 0px 0px #00000060;
+    @extend %boxform;
+    background-color: map-get($colores, clientes);
     padding: 5px;
 }
 
 .carousel-control-prev-icon {
+    @include sizes(50px ,50px );
     background-color: rgba(0, 0, 0, 0.5);
-    width: 50px;
-    height: 50px;
 }
 
 .carousel-control-next-icon {
+    @include sizes(50px ,50px );
     background-color: rgba(0, 0, 0, 0.5);
-    width: 50px;
-    height: 50px;
 }
 
 /* index hasta aca */
@@ -97,12 +103,11 @@ main {
     justify-content: center;
 
     .form {
+        @include sizes(auto ,75vw );
+        @extend %boxform;
         background-color: $background-color-container;
-        height: auto;
-        width: 75vw;
         margin: 125px 0px 30px 25px;
         padding: 10px;
-        box-shadow: 2px 2px 0px 0px #00000069;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -116,16 +121,14 @@ main {
         }
 
         img {
+            @include sizes(30px ,30px );
             display: flex;
-            height: 30px;
-            width: 30px;
             border: 1px solid rgb(0, 0, 0);
         }
 
         input {
+            @include sizes(30px, 90% );
             font-size: 1.8rem;
-            height: 30px;
-            width: 90%;
             margin: 25px 10px 0px -1px;
             padding-left: 5px;
         }
@@ -165,26 +168,22 @@ main {
             font-size: 1.2rem;
 
             input {
-                height: 20px;
-                width: 20px;
+                @include sizes(20px ,20px );
                 margin-left: 10px;
             }
         }
 
         .consulta textarea {
-            height: 30vh;
-            width: 80%;
+            @include sizes(30vh ,80% );
+            @extend %boxform;
             margin: 5px;
             padding: 5px;
-            border: 1px solid;
-            box-shadow: 3px 3px 0px 0px #00000077;
             font-size: 1.5rem;
         }
 
         .btn-enviar-consulta {
+            @include sizes(40px ,200px );
             background: lightblue;
-            height: 40px;
-            width: 200px;
             margin: 40px;
             border: 0;
             border-radius: 5px;
@@ -209,12 +208,11 @@ main {
     justify-content: center;
 
     .opinion {
-        height: auto;
-        width: 75vw;
+        @include sizes(auto, 75vw );
+        @extend %boxform;
         margin: 150px 0px 30px 0;
         padding: 10px;
         background-color: $background-color-container;
-        box-shadow: 0px 2px 2px 0px #00000069;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -246,11 +244,11 @@ main {
     justify-content: center;
 
     .form {
+        @extend %boxform;
         width: 75vw;
         margin: 23px 0px 30px 0;
         padding: 10px;
         background-color: $background-color-container;
-        box-shadow: 0px 2px 2px 0px #00000069;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -263,9 +261,8 @@ main {
         }
 
         input {
+            @include sizes(30px ,70% );
             font-size: 1.8rem;
-            height: 30px;
-            width: 70%;
             margin: 25px 10px 0px -1px;
             padding-left: 5px;
         }
@@ -276,9 +273,8 @@ main {
             align-items: flex-end;
 
             img {
+                @include sizes(30px ,30px );
                 display: flex;
-                height: 30px;
-                width: 30px;
                 border: 1px solid rgb(0, 0, 0);
             }
         }
@@ -288,19 +284,16 @@ main {
         }
 
         textarea {
-            height: 30vh;
-            width: 60vw;
+            @include sizes(30vh ,60vw );
+            @extend %boxform;
             margin: 5px;
             padding: 5px;
-            border: 1px solid;
-            box-shadow: 3px 3px 0px 0px #00000077;
             font-size: 1.8rem;
         }
 
         .btn-enviar-opinion {
+            @include sizes(40px ,200px );
             background: lightblue;
-            height: 40px;
-            width: 200px;
             margin: 3%;
             border: 0;
             border-radius: 5px;
@@ -322,13 +315,12 @@ main {
 /* --- Viajes en Argentina --- */
 
 .hero-viajesArg {
+    @include sizes(60vh ,100vw );
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/viajesArgBienvenida.jpg");
-    background-color: steelblue;
+    background-color: map-get($colores, hero);
     background-position: inherit;
     background-size: contain;
     background-attachment: fixed;
-    height: 60vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -347,13 +339,12 @@ main {
 /* --- Viajes Internacionales --- */
 
 .hero-viajesInt {
+    @include sizes(60vh ,100vw );
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/viajesIntBienvenida.jpg");
-    background-color: steelblue;
+    background-color: map-get($colores, hero);
     background-position: inherit;
     background-size: contain;
     background-attachment: fixed;
-    height: 60vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -397,6 +388,7 @@ main {
     &:hover {
         transform: scale(1.01);
         box-shadow: 2px 2px 2px 2px #00000069;
+        background-color: rgb(241, 241, 241);
     }
 }
 
