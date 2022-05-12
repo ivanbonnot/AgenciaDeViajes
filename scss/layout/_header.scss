@@ -1,3 +1,20 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $background-color;
+    background: $background-color-gradient;
+    overflow-x: hidden;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 0.5fr;
+    grid-template-areas:
+        "navbar navbar"
+        "main main"
+        "footer footer";
+}
+
 /* Navbar */
 .header {
     grid-area: navbar;

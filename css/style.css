@@ -9,6 +9,18 @@
 html {
   font-size: 62.5%; }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #d0f7ff;
+  background: linear-gradient(180deg, #d0f7ff 0%, white 44%, #d2f8ff 100%);
+  overflow-x: hidden; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 0.5fr;
+  grid-template-areas: "navbar navbar" "main main" "footer footer"; }
+
 /* Navbar */
 .header {
   grid-area: navbar;
@@ -45,17 +57,6 @@ html {
   .header .navbar-toggler-icon {
     width: 20px;
     height: 20px; }
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: background white background linear-gradient(180deg, white 0%, white 0%, #dcf8ff 100%);
-  overflow-x: hidden; }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto 0.5fr;
-  grid-template-areas: "navbar navbar" "main main" "footer footer"; }
 
 /* --- index --- */
 main {
