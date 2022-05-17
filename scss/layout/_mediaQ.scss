@@ -1,6 +1,16 @@
 /* ////////////////////////////////////////////////// */
 
 /* media queries */
+@media screen and (min-width: 1400px) {
+
+    /* index.html */
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
 
 @media screen and (max-width: 1280px) {
 
