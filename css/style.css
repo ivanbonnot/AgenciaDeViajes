@@ -411,19 +411,23 @@ main {
 /* ////////////////////////////////////////////////// */
 @media screen and (max-width: 1060px) {
   .grid-container {
-    grid-template-areas: "navbar" "main" "footer"; }
+    grid-template-areas: "navbar" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; }
   /* NavBar */
   .header nav .logo-size {
     height: 50px;
     width: 50px; }
   .header nav a h1 {
     font-size: 2.5rem; }
+  .navbar-nav {
+    padding-right: 10px; }
   /* contacto.html */
   .contacto .form {
     margin-top: 100px; }
   /* opiniones.html */
   .opiniones .opinion {
-    margin-top: 165px;
+    margin-top: 85px;
     width: 90vw; }
   .opinar .form {
     width: 85vw;
@@ -441,7 +445,11 @@ main {
     margin-left: 0px; }
   .header nav ul li a {
     margin-right: 0px;
-    padding: 0px 0px; } }
+    padding: 0px 0px;
+    letter-spacing: 0px; }
+  .navbar-nav {
+    padding-left: 0;
+    padding-right: 20px; } }
 
 /* ////////////////////////////////////////////////// */
 @media screen and (max-width: 768px) {
