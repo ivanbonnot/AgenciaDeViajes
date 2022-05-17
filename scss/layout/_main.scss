@@ -62,18 +62,21 @@ main {
 .about {
     @extend %boxform;
     background-color: map-get($colores, about);
-}
-
-.about img {
-    max-width: 700px;
-    max-height: 526px;
+    
+    img {
+        max-width: 700px;
+        max-height: 526px;
+    }
+    
 }
 
 /* Comienzo seccion de ofertas*/
 .ofertas {
     @extend %boxform;
     background-color: map-get($colores, ofertas);
+    
 }
+
 
 /* Comienzo seccion nuestros clientes */
 .clientes {
@@ -386,6 +389,7 @@ main {
     transition: all 0.3s ease-in-out;
 
     &:hover {
+        cursor: pointer;
         transform: scale(1.01);
         box-shadow: 2px 2px 2px 2px #00000069;
         background-color: rgb(241, 241, 241);

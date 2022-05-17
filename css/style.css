@@ -100,10 +100,9 @@ main {
 /* Seccion de acerca de nosotros */
 .about {
   background-color: white; }
-
-.about img {
-  max-width: 700px;
-  max-height: 526px; }
+  .about img {
+    max-width: 700px;
+    max-height: 526px; }
 
 /* Comienzo seccion de ofertas*/
 .ofertas {
@@ -350,6 +349,7 @@ main {
 .trans-cards {
   transition: all 0.3s ease-in-out; }
   .trans-cards:hover {
+    cursor: pointer;
     transform: scale(1.01);
     box-shadow: 2px 2px 2px 2px #00000069;
     background-color: #f1f1f1; }
