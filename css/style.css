@@ -347,9 +347,9 @@ main {
     transform: scale(1.03); }
 
 .trans-cards {
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; }
   .trans-cards:hover {
-    cursor: pointer;
     transform: scale(1.01);
     box-shadow: 2px 2px 2px 2px #00000069;
     background-color: #f1f1f1; }

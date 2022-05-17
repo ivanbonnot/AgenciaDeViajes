@@ -387,9 +387,9 @@ main {
 
 .trans-cards {
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 
     &:hover {
-        cursor: pointer;
         transform: scale(1.01);
         box-shadow: 2px 2px 2px 2px #00000069;
         background-color: rgb(241, 241, 241);
