@@ -24,7 +24,7 @@ main {
 /* Imagen de bienvenida */
 .hero {
     @include sizes(100vh ,100vw );
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bienvenida3.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../img/bienvenida3.jpg");
     background-color: map-get($colores, hero);
     background-position: center;
     background-size: cover;
