@@ -218,20 +218,14 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 1.5rem; }
-    .opiniones .opinion div {
-      height: auto;
-      margin: 10px;
-      padding: 5px;
+    font-size: 1.8rem; }
+    .opiniones .opinion h3 {
+      font-size: 2rem; }
+    .opiniones .opinion .icono-user {
       background-image: url("../img/icons/opinion.png");
       background-size: 30px;
       background-repeat: no-repeat;
-      border: 1px solid rgba(2, 2, 2, 0.438);
-      font-size: 1.8rem;
-      justify-content: center; }
-      .opiniones .opinion div h3 {
-        margin: 7px 0px 0px 30px;
-        font-size: 1.5rem; }
+      margin: 4px; }
 
 /* Formulario */
 .opinar {
@@ -483,7 +477,10 @@ main {
     margin: 10px 0 10px 100px; }
   /* opiniones.html */
   .opiniones .opinion {
-    margin-top: 100px; } }
+    margin-top: 100px;
+    font-size: 1.8rem; }
+  .opiniones .opinion h3 {
+    font-size: 2rem; } }
 
 /* ////////////////////////////////////////////////// */
 @media screen and (max-width: 576px) {
